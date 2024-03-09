@@ -22,9 +22,6 @@ outerLoop: for (index1, item1) in nums.enumerated() {
         if  (index1 != index2) && ((item1 + item2) == target) {
             firstIndex = index1
             secondIndex = index2
-            
-            //                print(firstIndex)
-            //                print(secondIndex)
             break outerLoop
         }
     }
