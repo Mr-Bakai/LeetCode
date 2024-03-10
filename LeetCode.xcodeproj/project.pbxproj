@@ -11,6 +11,7 @@
 		6A4D8CB02B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CAF2B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift */; };
 		6A4D8CB22B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */; };
 		6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */; };
+		6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */; };
 		6AF3C37E2AF3BD29006B547B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF3C37D2AF3BD29006B547B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		6A4D8CAF2B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2540. Minimum Common Value.swift"; sourceTree = "<group>"; };
 		6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349. Intersection of Two Arrays.swift"; sourceTree = "<group>"; };
 		6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35. Search Insert Position.swift"; sourceTree = "<group>"; };
+		6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704. Binary Search.swift"; sourceTree = "<group>"; };
 		6AF3C37A2AF3BD29006B547B /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF3C37D2AF3BD29006B547B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +55,7 @@
 				6A4D8CAF2B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift */,
 				6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */,
 				6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */,
+				6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */,
 				6A4D8CAE2B9C48240009B0B6 /* TwoSum.swift in Sources */,
 				6AF3C37E2AF3BD29006B547B /* main.swift in Sources */,
+				6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */,
 				6A4D8CB22B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift in Sources */,
 				6A4D8CB02B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift in Sources */,
 			);
