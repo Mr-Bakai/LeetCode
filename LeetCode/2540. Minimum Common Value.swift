@@ -27,18 +27,18 @@ func getCommonVariant2(
     _ nums2: [Int]
 ) -> Int {
     
-    var i = 0
-    var j = 0
+    var left = 0
+    var right = 0
     
-    while i < nums1.count && j < nums2.count {
-        if nums1[i] == nums2[j] {
-            return nums1[i]
+    while left < nums1.count && right < nums2.count {
+        if nums1[left] == nums2[right] {
+            return nums1[left]
         }
         
-        if nums1[i] < nums2[j] {
-            i += 1
+        if nums1[left] < nums2[right] {
+            left += 1
         } else {
-            j += 1
+            right += 1
         }
     }
     return -1
