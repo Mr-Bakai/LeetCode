@@ -22,3 +22,6 @@ print(
 print(
     searchInsert([1,3,5,6], 2)
 )
+print(
+    "pivotInteger(8): \(pivotInteger(8))"
+)
