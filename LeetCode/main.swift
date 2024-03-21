@@ -25,3 +25,6 @@ print(
 print(
     "pivotInteger(8): \(pivotInteger(8))"
 )
+print(
+    "twoSum2: \(twoSum2([-1,0], 6))"
+)
