@@ -16,6 +16,8 @@ import Foundation
 /// The distinct triplets are [-1,0,1] and [-1,-1,2].
 /// Notice that the order of the output and the order of the triplets does not matter.
 
+/// sorted nums: [-4, -1, -1, 0, 1, 2]
+
 func threeSum(_ nums: [Int]) -> [[Int]] {
     var res = [[Int]]()
     var nums = nums.sorted()
