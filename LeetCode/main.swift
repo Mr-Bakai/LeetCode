@@ -28,3 +28,6 @@ print(
 print(
     "twoSum2: \(twoSum2([-1,0], 6))"
 )
+print(
+    "threeSum: \(threeSum([-1,0,1,2,-1,-4]))"
+)
