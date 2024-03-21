@@ -20,7 +20,7 @@ import Foundation
 
 func threeSum(_ nums: [Int]) -> [[Int]] {
     var res = [[Int]]()
-    var nums = nums.sorted()
+    let nums = nums.sorted()
     
     for i in 0..<nums.count {
         if nums[i] > 0 {
