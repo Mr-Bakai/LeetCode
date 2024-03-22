@@ -21,7 +21,7 @@ func threeSumClosest(
     return result
 }
 
-// [-1,2,1,-4]
+// [-4,-1,1,2]
 private func twoSum(
     _ nums: [Int],
     _ difference: inout Int,
