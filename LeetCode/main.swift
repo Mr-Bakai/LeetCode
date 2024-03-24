@@ -34,3 +34,6 @@ print(
 print(
     "threeSumClosest: \(threeSumClosest([-1,2,1,-4], 1))"
 )
+print(
+    "threeSumSmaller: \(threeSumSmaller([3,1,0,-2], 4))"
+)
