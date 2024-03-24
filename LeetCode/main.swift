@@ -37,3 +37,6 @@ print(
 print(
     "threeSumSmaller: \(threeSumSmaller([3,1,0,-2], 4))"
 )
+print(
+    "findDuplicate: \(findDuplicate([1,3,4,2,2]))"
+)
