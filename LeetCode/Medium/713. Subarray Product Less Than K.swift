@@ -67,7 +67,7 @@ func numSubarrayProductLessThanK(
         
         totalCount += low - currIdx - 1
     }
-    print(logsPrefixSum)
+//    print(logsPrefixSum)
     
     return totalCount
 }

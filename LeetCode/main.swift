@@ -17,7 +17,7 @@ print(
     getCommonVariant2([1,2,3], [2,3])
 )
 print(
-    intersection([4,9,5], [9,4,9,8,4])
+    "349. Intersection of Two Arrays: \(intersection([4,9,5], [9,4,9,8,4]))"
 )
 print(
     searchInsert([1,3,5,6], 2)
