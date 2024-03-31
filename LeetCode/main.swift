@@ -20,6 +20,9 @@ print(
     "349. Intersection of Two Arrays: \(intersection([4,9,5], [9,4,9,8,4]))"
 )
 print(
+    "350. Intersection of Two Arrays II: \(intersect2([4,9,5], [9,4,9,8,4]))"
+)
+print(
     searchInsert([1,3,5,6], 2)
 )
 print(
