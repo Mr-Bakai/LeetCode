@@ -40,3 +40,12 @@ print(
 print(
     "findDuplicate: \(findDuplicate([1,3,4,2,2]))"
 )
+print(
+    "findDuplicateBinarySearch: \(findDuplicateBinarySearch([1,3,4,2,2]))"
+)
+print(
+    "firstMissingPositive: \(firstMissingPositive([7,8,9,11,12]))"
+)
+print(
+    "numSubarrayProductLessThanK: \(numSubarrayProductLessThanK())"
+)
