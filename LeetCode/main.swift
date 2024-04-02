@@ -52,3 +52,6 @@ print(
 print(
     "numSubarrayProductLessThanK: \(numSubarrayProductLessThanK())"
 )
+print(
+    "firstBadVersion: \(firstBadVersion(5))"
+)
