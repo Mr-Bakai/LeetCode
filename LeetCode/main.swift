@@ -58,3 +58,6 @@ print(
 print(
     "searchRange: \(searchRange())"
 )
+print(
+    "peakIndexInMountainArray: \(peakIndexInMountainArray())"
+)
