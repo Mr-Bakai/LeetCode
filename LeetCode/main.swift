@@ -55,3 +55,6 @@ print(
 print(
     "firstBadVersion: \(firstBadVersion(5))"
 )
+print(
+    "searchRange: \(searchRange())"
+)
