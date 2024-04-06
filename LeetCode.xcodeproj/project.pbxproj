@@ -19,6 +19,7 @@
 		6A4D8CB22B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */; };
 		6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */; };
 		6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */; };
+		6A53DF302BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */; };
 		6AB7AC492BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7AC482BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift */; };
 		6ACCF4A02BB2FC0900FD2CEA /* 41. First Missing Positive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACCF49F2BB2FC0900FD2CEA /* 41. First Missing Positive.swift */; };
 		6AEE72AE2BBBBAE400C497F4 /* 278. First Bad Version .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE72AD2BBBBAE400C497F4 /* 278. First Bad Version .swift */; };
@@ -52,6 +53,7 @@
 		6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349. Intersection of Two Arrays.swift"; sourceTree = "<group>"; };
 		6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35. Search Insert Position.swift"; sourceTree = "<group>"; };
 		6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704. Binary Search.swift"; sourceTree = "<group>"; };
+		6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1060. Missing Element in Sorted Array.swift"; sourceTree = "<group>"; };
 		6AB7AC482BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "350. Intersection of Two Arrays II.swift"; sourceTree = "<group>"; };
 		6ACCF49F2BB2FC0900FD2CEA /* 41. First Missing Positive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "41. First Missing Positive.swift"; sourceTree = "<group>"; };
 		6AEE72AD2BBBBAE400C497F4 /* 278. First Bad Version .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "278. First Bad Version .swift"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				6A300E442BB3BEA00027F6A8 /* 713. Subarray Product Less Than K.swift */,
 				6AFCBB1B2BBC4D95004AC7AA /* 34. Find First and Last Position of Element in Sorted Array.swift */,
 				6AFCBB1D2BBD9C26004AC7AA /* 852. Peak Index in a Mountain Array.swift */,
+				6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A53DF302BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift in Sources */,
 				6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */,
 				6A0945052BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift in Sources */,
 				6A300E452BB3BEA00027F6A8 /* 713. Subarray Product Less Than K.swift in Sources */,

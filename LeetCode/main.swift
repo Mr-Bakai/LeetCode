@@ -61,3 +61,6 @@ print(
 print(
     "peakIndexInMountainArray: \(peakIndexInMountainArray())"
 )
+print(
+    "missingElement: \(missingElement())"
+)
