@@ -64,3 +64,6 @@ print(
 print(
     "missingElement: \(missingElement())"
 )
+print(
+    "searchInRotaitedSortedArray: \(searchInRotaitedSortedArray())"
+)
