@@ -26,6 +26,7 @@
 		6A90292A2BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9029292BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift */; };
 		6AB7AC492BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7AC482BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift */; };
 		6ACCF4A02BB2FC0900FD2CEA /* 41. First Missing Positive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACCF49F2BB2FC0900FD2CEA /* 41. First Missing Positive.swift */; };
+		6ACD06552BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD06542BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift */; };
 		6AEE72AE2BBBBAE400C497F4 /* 278. First Bad Version .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE72AD2BBBBAE400C497F4 /* 278. First Bad Version .swift */; };
 		6AF3C37E2AF3BD29006B547B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF3C37D2AF3BD29006B547B /* main.swift */; };
 		6AFCBB1C2BBC4D95004AC7AA /* 34. Find First and Last Position of Element in Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCBB1B2BBC4D95004AC7AA /* 34. Find First and Last Position of Element in Sorted Array.swift */; };
@@ -64,6 +65,7 @@
 		6A9029292BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "374. Guess Number Higher or Lower.swift"; sourceTree = "<group>"; };
 		6AB7AC482BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "350. Intersection of Two Arrays II.swift"; sourceTree = "<group>"; };
 		6ACCF49F2BB2FC0900FD2CEA /* 41. First Missing Positive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "41. First Missing Positive.swift"; sourceTree = "<group>"; };
+		6ACD06542BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "153. Find Minimum in Rotated Sorted Array.swift"; sourceTree = "<group>"; };
 		6AEE72AD2BBBBAE400C497F4 /* 278. First Bad Version .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "278. First Bad Version .swift"; sourceTree = "<group>"; };
 		6AF3C37A2AF3BD29006B547B /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF3C37D2AF3BD29006B547B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */,
 				6A9029272BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift */,
 				6A3ED4572BC69F7700F39DEC /* 162. Find Peak Element.swift */,
+				6ACD06542BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				6AF3C37E2AF3BD29006B547B /* main.swift in Sources */,
 				6A09450F2BB040DF00C12EC0 /* 287. Find the Duplicate Number.swift in Sources */,
 				6AFCBB1E2BBD9C26004AC7AA /* 852. Peak Index in a Mountain Array.swift in Sources */,
+				6ACD06552BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift in Sources */,
 				6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */,
 				6AFCBB1C2BBC4D95004AC7AA /* 34. Find First and Last Position of Element in Sorted Array.swift in Sources */,
 				6A09450D2BAD819D00C12EC0 /* 259. 3Sum Smaller.swift in Sources */,

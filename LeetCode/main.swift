@@ -70,3 +70,6 @@ print(
 print(
     "findPeakElement: \(findPeakElement())"
 )
+print(
+    "findMin: \(findMin())"
+)
