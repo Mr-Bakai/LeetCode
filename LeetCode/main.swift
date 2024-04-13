@@ -67,3 +67,6 @@ print(
 print(
     "searchInRotaitedSortedArray: \(searchInRotaitedSortedArray())"
 )
+print(
+    "findPeakElement: \(findPeakElement())"
+)
