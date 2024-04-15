@@ -17,9 +17,9 @@ func findClosestElements(
     var right = arr.count - k
     
     while left < right {
-        let mid = left + (right - left)/2
+        let mid = left + (right - left) / 2
         
-        if arr[mid] - x > arr[mid + k] - x {
+        if x - arr[mid] > arr[mid + k] - x {
             left = mid + 1
         } else {
             right = mid
