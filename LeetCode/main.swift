@@ -73,3 +73,6 @@ print(
 print(
     "findMin: \(findMin())"
 )
+print(
+    "findClosestElements: \(findClosestElements())"
+)

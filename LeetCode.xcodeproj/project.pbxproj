@@ -21,6 +21,7 @@
 		6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */; };
 		6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */; };
 		6A53DF302BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */; };
+		6A5AEB922BCCD092009A7181 /* 658. Find K Closest Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AEB912BCCD092009A7181 /* 658. Find K Closest Elements.swift */; };
 		6A9029262BC284D100912B4B /* 69. Sqrt(x).swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9029252BC284D100912B4B /* 69. Sqrt(x).swift */; };
 		6A9029282BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9029272BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift */; };
 		6A90292A2BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9029292BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift */; };
@@ -60,6 +61,7 @@
 		6A4D8CB32B9DCC250009B0B6 /* 35. Search Insert Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35. Search Insert Position.swift"; sourceTree = "<group>"; };
 		6A4D8CB62B9DDA540009B0B6 /* 704. Binary Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "704. Binary Search.swift"; sourceTree = "<group>"; };
 		6A53DF2F2BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1060. Missing Element in Sorted Array.swift"; sourceTree = "<group>"; };
+		6A5AEB912BCCD092009A7181 /* 658. Find K Closest Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "658. Find K Closest Elements.swift"; sourceTree = "<group>"; };
 		6A9029252BC284D100912B4B /* 69. Sqrt(x).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "69. Sqrt(x).swift"; sourceTree = "<group>"; };
 		6A9029272BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33. Search in Rotated Sorted Array.swift"; sourceTree = "<group>"; };
 		6A9029292BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "374. Guess Number Higher or Lower.swift"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				6A9029272BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift */,
 				6A3ED4572BC69F7700F39DEC /* 162. Find Peak Element.swift */,
 				6ACD06542BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift */,
+				6A5AEB912BCCD092009A7181 /* 658. Find K Closest Elements.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				6A9029282BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift in Sources */,
 				6A90292A2BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift in Sources */,
 				6A4D8CB22B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift in Sources */,
+				6A5AEB922BCCD092009A7181 /* 658. Find K Closest Elements.swift in Sources */,
 				6AB7AC492BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift in Sources */,
 				6ACCF4A02BB2FC0900FD2CEA /* 41. First Missing Positive.swift in Sources */,
 				6AEE72AE2BBBBAE400C497F4 /* 278. First Bad Version .swift in Sources */,
