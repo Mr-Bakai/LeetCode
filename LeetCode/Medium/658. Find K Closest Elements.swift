@@ -7,6 +7,8 @@
 
 import Foundation
 
+// TODO: TO BE REVISED
+
 func findClosestElements(
     _ arr: [Int] = [1,2,3,4,5],
     _ k: Int = 4,
