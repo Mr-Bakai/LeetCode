@@ -21,7 +21,11 @@ func myPow(
 
 /// https://cp-algorithms.com/algebra/binary-exp.html
 /// binary exponention explanation
-func binaryExp(_ x: Double, _ n: Int) -> Double {
+func binaryExp(
+    _ x: Double,
+    _ n: Int
+) -> Double {
+    
     if n == 0 { return 1 }
     
     // Handle case where n < 0.
@@ -36,12 +40,12 @@ func binaryExp(_ x: Double, _ n: Int) -> Double {
     var result = 1.0
     
     while tempN != 0 {
-        // If 'n' is odd we multiply result with 'x' and reduce 'n' by '1'.
+        // If 'tempN' is odd we multiply result with 'tempX' and reduce 'tempN' by '1'.
         if tempN % 2 == 1 {
             result *= tempX
             tempN -= 1
         }
-        // We square 'x' and reduce 'n' by half, x^n => (x^2)^(n/2).
+        // We square 'tempX' and reduce 'tempN' by half, x^n => (x^2)^(n/2).
         tempX *= tempX
         tempN /= 2
     }
