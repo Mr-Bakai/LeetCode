@@ -22,6 +22,7 @@ func myPow(
 
 /// https://cp-algorithms.com/algebra/binary-exp.html
 /// binary exponention explanation
+/// https://www.youtube.com/watch?v=1TtWF2ZLNzk&list=LL&index=21
 func binaryExp(
     _ x: Double,
     _ n: Int

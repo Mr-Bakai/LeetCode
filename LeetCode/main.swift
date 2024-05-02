@@ -76,3 +76,6 @@ print(
 print(
     "findClosestElements: \(findClosestElements())"
 )
+print(
+    "isPerfectSquare: \(isPerfectSquare())"
+)
