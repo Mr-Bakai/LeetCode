@@ -79,3 +79,6 @@ print(
 print(
     "isPerfectSquare: \(isPerfectSquare())"
 )
+print(
+    "nextGreatestLetter: \(nextGreatestLetter())"
+)
