@@ -82,3 +82,6 @@ print(
 print(
     "nextGreatestLetter: \(nextGreatestLetter())"
 )
+print(
+    "containsDuplicate: \(containsDuplicate())"
+)
