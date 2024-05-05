@@ -24,8 +24,8 @@ import Foundation
 /// Explanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].
 
 func nextGreatestLetter(
-    _ letters: [Character],
-    _ target: Character
+    _ letters: [Character] = ["x","x","y","y"],
+    _ target: Character = "z"
 ) -> Character {
     
     var left = 0
@@ -43,4 +43,3 @@ func nextGreatestLetter(
     
     return letters[left] <= target ? letters[0] : letters[left]
 }
-
