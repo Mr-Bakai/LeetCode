@@ -121,7 +121,7 @@
 		6A4D8CB52B9DCC320009B0B6 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
-				6A65A2852BE7DA7700EAC365 /* HashTable */,
+				6A65A2852BE7DA7700EAC365 /* Set */,
 				6A4D8CAD2B9C48240009B0B6 /* TwoSum.swift */,
 				6A4D8CAF2B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift */,
 				6A4D8CB12B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift */,
@@ -138,12 +138,12 @@
 			path = Easy;
 			sourceTree = "<group>";
 		};
-		6A65A2852BE7DA7700EAC365 /* HashTable */ = {
+		6A65A2852BE7DA7700EAC365 /* Set */ = {
 			isa = PBXGroup;
 			children = (
 				6A65A2832BE7DA6900EAC365 /* 217. Contains Duplicate.swift */,
 			);
-			path = HashTable;
+			path = Set;
 			sourceTree = "<group>";
 		};
 		6ACCF49E2BB2FBE500FD2CEA /* Hard */ = {
