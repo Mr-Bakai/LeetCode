@@ -88,3 +88,6 @@ print(
 print(
     "isAnagram: \(isAnagram())"
 )
+print(
+    "groupAnagrams: \(groupAnagrams())"
+)
