@@ -123,6 +123,7 @@
 		6A4D8CB52B9DCC320009B0B6 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
+				6AFF727E2BEA7DD600320B51 /* HashMap */,
 				6A65A2852BE7DA7700EAC365 /* Set */,
 				6A4D8CAD2B9C48240009B0B6 /* TwoSum.swift */,
 				6A4D8CAF2B9DB27A0009B0B6 /* 2540. Minimum Common Value.swift */,
@@ -144,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				6A65A2832BE7DA6900EAC365 /* 217. Contains Duplicate.swift */,
-				6AFF727C2BEA6DC200320B51 /* 242. Valid Anagram.swift */,
 			);
 			path = Set;
 			sourceTree = "<group>";
@@ -182,6 +182,14 @@
 				6ACCF49E2BB2FBE500FD2CEA /* Hard */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		6AFF727E2BEA7DD600320B51 /* HashMap */ = {
+			isa = PBXGroup;
+			children = (
+				6AFF727C2BEA6DC200320B51 /* 242. Valid Anagram.swift */,
+			);
+			path = HashMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
