@@ -85,3 +85,6 @@ print(
 print(
     "containsDuplicate: \(containsDuplicate())"
 )
+print(
+    "isAnagram: \(isAnagram())"
+)
