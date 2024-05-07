@@ -36,7 +36,10 @@ func groupAnagrams(
     return [[""]]
 }
 
-private func determineAnagram(_ s: String, _ t: String) -> Bool {
+private func determineAnagram(
+    _ s: String,
+    _ t: String
+) -> Bool {
     
     var dictS = [Character:Int]()
     var dictT = [Character:Int]()
