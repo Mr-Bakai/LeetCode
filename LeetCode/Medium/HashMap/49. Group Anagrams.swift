@@ -16,10 +16,6 @@ func groupAnagrams(
     _ strs: [String] = ["eat","tea","tan","ate","nat","bat"]
 ) -> [[String]] {
     
-    for i in 0..<strs.count {
-        print(strs[i])
-    }
-    
     var left = 0
     var leftPlus = left + 1
     var right = strs.count
