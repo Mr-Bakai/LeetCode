@@ -20,16 +20,28 @@ func groupAnagrams(
     var leftPlus = left + 1
     var right = strs.count
     
+    var res = [""]
+    
     while left < right {
-        print(determineAnagram(strs[left], strs[leftPlus]))
+        var tempArr = [""]
+        
+        if determineAnagram(strs[left], strs[leftPlus]) {
+            tempArr.append(strs[leftPlus])
+        }
         
         leftPlus += 1
         
         print("left: \(left), leftPlus: \(leftPlus), right: \(right)")
         
-        if leftPlus == right {
+        if leftPlus == right - 1 {
             left += 1
             leftPlus = left
+            
+            if tempArr.count > 0 {
+                tempArr.append(strs[left])
+            }
+            
+            res.append(contentsOf: tempArr)
         }
     }
     
