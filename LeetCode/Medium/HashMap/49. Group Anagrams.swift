@@ -11,58 +11,20 @@ import Foundation
 //
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-
 func groupAnagrams(
     _ strs: [String] = ["eat","tea","tan","ate","nat","bat"]
 ) -> [[String]] {
-    
-    var left = 0
-    var leftPlus = left + 1
-    var right = strs.count
-    
-    var res = [""]
-    
-    while left < right {
-        var tempArr = [""]
-        
-        if determineAnagram(strs[left], strs[leftPlus]) {
-            tempArr.append(strs[leftPlus])
-        }
-        
-        leftPlus += 1
-        
-        print("left: \(left), leftPlus: \(leftPlus), right: \(right)")
-        
-        if leftPlus == right - 1 {
-            left += 1
-            leftPlus = left
-            
-            if tempArr.count > 0 {
-                tempArr.append(strs[left])
-            }
-            
-            res.append(contentsOf: tempArr)
-        }
-    }
-    
-    return [[""]]
-}
+    var dict = [[Int]: [String]]()
 
-private func determineAnagram(
-    _ s: String,
-    _ t: String
-) -> Bool {
-    
-    var dictS = [Character:Int]()
-    var dictT = [Character:Int]()
-    
-    for i in s {
-        dictS[i, default: 0] += 1
+    let aAsciiValue = Character("a").asciiValue!
+    for word in strs {
+        
+        var asciiCount = [Int](repeating: 0, count: 26)
+        for char in word.utf8 {
+            asciiCount[Int(char - aAsciiValue)] += 1
+        }
+
+        dict[asciiCount, default: []].append(word)
     }
-    
-    for i in t {
-        dictT[i, default: 0] += 1
-    }
-    
-    return dictS == dictT
+    return Array(dict.values)
 }
