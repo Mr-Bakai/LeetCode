@@ -20,12 +20,12 @@ import Foundation
 /// Output: [1]
 
 func topKFrequent(
-    _ nums: [Int] = [1,1,2,2,3],
+    _ nums: [Int] = [1,2],
     _ k: Int = 2
 ) -> [Int] {
-    
+    if nums.count == 1 { return nums }
     var left = 0
-    var right = nums.count - 1
+    var right = nums.count
     
     var counter = [Int:Int]()
     
@@ -34,20 +34,9 @@ func topKFrequent(
         left += 1
     }
     
-    print("KEYS: \(counter.keys)")
-    print("VALUES: \(counter.values)")
-    
-    print("Sorted one: \(counter.sorted(by: >))")
-    
-//    var keys = [Int]()
-//    for i in counter.keys...k {
-//        keys.append(i)
-//    }
-    
-    return []
+    return counter.sorted { a, b in
+        return a.value > b.value
+    }
+    .prefix(k)
+    .map{$0.key}
 }
-
-/// [1 ----> 2]
-/// [2 ----> 2]
-/// [3 ----> 0]
-///
