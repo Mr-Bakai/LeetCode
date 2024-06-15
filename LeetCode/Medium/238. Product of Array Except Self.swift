@@ -38,9 +38,7 @@ func productExceptSelf(
 ) -> [Int] {
     
     var result = [Int]()
-    
     var prefixes = [Int]()
-    
     
     // [1,2,3,4]
     for i in 0..<nums.count {
@@ -55,15 +53,25 @@ func productExceptSelf(
     
     var left = 0
     var right = nums.count - 1
-    var postfixes = [Int](repeating: 1, count: nums.count)
+    var postfixes = [Int](repeating: 0, count: nums.count)
     
-    while left < right {
+    while left <= right {
         if right == nums.count - 1 {
-            postfixes.insert(nums[right], at: right)
+            postfixes[right] += nums[right]
         } else if right >= 0 {
-            postfixes.insert(postfixes[right+1] * nums[right], at: right)
+            postfixes[right] += (postfixes[right+1] * nums[right])
         }
         right = right - 1
+    }
+    
+    for i in 0..<nums.count {
+        if i > 0 && i+1 <= postfixes.count-1 {
+            result.append(prefixes[i-1] * postfixes[i+1])
+        } else if i+1 <= postfixes.count-1 {
+            result.append(postfixes[i+1])
+        } else {
+            result.append(prefixes[i-1])
+        }
     }
     
     print("postfixes: \(postfixes)")
