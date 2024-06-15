@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */; };
+		33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */; };
 		6A0945032BAC270D00C12EC0 /* 15. 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945022BAC270D00C12EC0 /* 15. 3Sum.swift */; };
 		6A0945052BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945042BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift */; };
 		6A0945092BACAD2E00C12EC0 /* 16. 3Sum Closest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945082BACAD2E00C12EC0 /* 16. 3Sum Closest.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347. Top K Frequent Elements.swift"; sourceTree = "<group>"; };
+		33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self.swift"; sourceTree = "<group>"; };
 		6A0945022BAC270D00C12EC0 /* 15. 3Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15. 3Sum.swift"; sourceTree = "<group>"; };
 		6A0945042BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167. Two Sum II - Input Array Is Sorted.swift"; sourceTree = "<group>"; };
 		6A0945082BACAD2E00C12EC0 /* 16. 3Sum Closest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16. 3Sum Closest.swift"; sourceTree = "<group>"; };
@@ -121,7 +123,7 @@
 				6A5AEB912BCCD092009A7181 /* 658. Find K Closest Elements.swift */,
 				6AB5CCC92BD00AC50069FDD6 /* 702. Search in a Sorted Array of Unknown Size.swift */,
 				6AB5CCCB2BD0BD0E0069FDD6 /* 50. Pow(x, n).swift */,
-				33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */,
+				33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 		6AFF727F2BEA871A00320B51 /* HashMap */ = {
 			isa = PBXGroup;
 			children = (
+				33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */,
 				6AFF72802BEA872D00320B51 /* 49. Group Anagrams.swift */,
 			);
 			path = HashMap;
@@ -271,6 +274,7 @@
 				6A4D8CAE2B9C48240009B0B6 /* TwoSum.swift in Sources */,
 				6AFF72812BEA872D00320B51 /* 49. Group Anagrams.swift in Sources */,
 				6AF3C37E2AF3BD29006B547B /* main.swift in Sources */,
+				33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */,
 				6A09450F2BB040DF00C12EC0 /* 287. Find the Duplicate Number.swift in Sources */,
 				33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */,
 				6AB5CCCA2BD00AC50069FDD6 /* 702. Search in a Sorted Array of Unknown Size.swift in Sources */,

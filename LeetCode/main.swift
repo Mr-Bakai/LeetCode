@@ -94,3 +94,6 @@ print(
 print(
     "topKFrequent: \(topKFrequent())"
 )
+print(
+    "productExceptSelf: \(productExceptSelf())"
+)
