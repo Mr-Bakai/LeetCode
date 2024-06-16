@@ -14,8 +14,8 @@ func mySqrt(_ x: Int) -> Int {
     var right = x/2
     
     while left <= right {
-        var pivot = left + (right - left) / 2
-        var num = pivot * pivot
+        let pivot = left + (right - left) / 2
+        let num = pivot * pivot
         if num > x {
             right = pivot - 1
         } else if num < x {

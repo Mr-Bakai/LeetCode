@@ -25,7 +25,7 @@ func topKFrequent(
 ) -> [Int] {
     if nums.count == 1 { return nums }
     var left = 0
-    var right = nums.count
+    let right = nums.count
     
     var counter = [Int:Int]()
     

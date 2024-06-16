@@ -104,9 +104,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33A3CC5D2C1EB3F500FCB4FA /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
 		6A0945012BAC26F500C12EC0 /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				33A3CC5D2C1EB3F500FCB4FA /* Array */,
 				6AFF727F2BEA871A00320B51 /* HashMap */,
 				6A0945022BAC270D00C12EC0 /* 15. 3Sum.swift */,
 				6A0945042BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift */,
@@ -123,7 +132,6 @@
 				6A5AEB912BCCD092009A7181 /* 658. Find K Closest Elements.swift */,
 				6AB5CCC92BD00AC50069FDD6 /* 702. Search in a Sorted Array of Unknown Size.swift */,
 				6AB5CCCB2BD0BD0E0069FDD6 /* 50. Pow(x, n).swift */,
-				33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */,
 			);
 			path = Medium;
 			sourceTree = "<group>";

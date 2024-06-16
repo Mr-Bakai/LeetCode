@@ -15,8 +15,8 @@ func search(
     var high = (nums.count - 1)
     
     while low <= high {
-        var mid = (high+low)/2
-        var guess = nums[mid]
+        let mid = (high+low)/2
+        let guess = nums[mid]
         
         if guess == target {
             return mid
