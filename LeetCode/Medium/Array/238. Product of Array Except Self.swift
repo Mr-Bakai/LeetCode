@@ -33,51 +33,50 @@
 // Input: nums = [1,2,3,4]
 // Output: [24,12,8,6]
 
-//func productExceptSelf(
-//    nums: [Int] = [1,2,3,4]
-//) -> [Int] {
-//    
-//    var result = [Int]()
-//    var prefixes = [Int]()
-//    
-//    for i in 0..<nums.count {
-//        if prefixes.isEmpty {
-//            prefixes.append(nums[i])
-//        } else if i - 1 >= 0 {
-//            prefixes.append(prefixes[i-1] * nums[i])
-//        }
-//    }
-//    
-//    let left = 0
-//    var right = nums.count - 1
-//    var postfixes = [Int](repeating: 0, count: nums.count)
-//    
-//    while left <= right {
-//        if right == nums.count - 1 {
-//            postfixes[right] += nums[right]
-//        } else if right >= 0 {
-//            postfixes[right] += (postfixes[right+1] * nums[right])
-//        }
-//        right = right - 1
-//    }
-//    
-//    for i in 0..<nums.count {
-//        if i > 0 && i+1 <= postfixes.count-1 {
-//            result.append(prefixes[i-1] * postfixes[i+1])
-//        } else if i+1 <= postfixes.count-1 {
-//            result.append(postfixes[i+1])
-//        } else {
-//            result.append(prefixes[i-1])
-//        }
-//    }
-//    
-//    print("prefixes: \(prefixes)")
-//    print("postfixes: \(postfixes)")
-//    return result
-//}
+// MARK: - Bruit force
+func productExceptSelf1(
+    nums: [Int] = [1,2,3,4]
+) -> [Int] {
+    
+    var result = [Int]()
+    var prefixes = [Int]()
+    
+    for i in 0..<nums.count {
+        if prefixes.isEmpty {
+            prefixes.append(nums[i])
+        } else if i - 1 >= 0 {
+            prefixes.append(prefixes[i-1] * nums[i])
+        }
+    }
+    
+    let left = 0
+    var right = nums.count - 1
+    var postfixes = [Int](repeating: 0, count: nums.count)
+    
+    while left <= right {
+        if right == nums.count - 1 {
+            postfixes[right] += nums[right]
+        } else if right >= 0 {
+            postfixes[right] += (postfixes[right+1] * nums[right])
+        }
+        right = right - 1
+    }
+    
+    for i in 0..<nums.count {
+        if i > 0 && i+1 <= postfixes.count-1 {
+            result.append(prefixes[i-1] * postfixes[i+1])
+        } else if i+1 <= postfixes.count-1 {
+            result.append(postfixes[i+1])
+        } else {
+            result.append(prefixes[i-1])
+        }
+    }
+    
+    return result
+}
 
-
-func productExceptSelf(
+// MARK: - Second best
+func productExceptSelf2(
     _ nums: [Int] = [1,2,3,4]
 ) -> [Int] {
     
@@ -93,33 +92,43 @@ func productExceptSelf(
         }
     }
     
-    print("prefixes: \(output)")
-    
     let left = 0
     var right = nums.count - 1
     var postFix = 1
     
-//    while left <= right {
-//        if right == nums.count - 1 {
-//            postFix *= nums[right]
-//        } else if right >= 0 {
-//            output[right] = nums[right] * postFix
-//            output[right] *= postFix
-//        }
-//        right = right - 1
-//    }
+    while left <= right {
+        if right == nums.count - 1 {
+            postFix *= nums[right]
+        } else if right-1 >= 0 {
+            output[right] = output[right] * postFix
+            postFix = nums[right] * postFix
+        } else {
+            output[right] = output[right] * postFix
+        }
+        right = right - 1
+    }
     
-//    for i in 0..<nums.count {
-//        if i > 0 && i+1 <= postfixes.count-1 {
-//            result.append(prefixes[i-1] * postfixes[i+1])
-//        } else if i+1 <= postfixes.count-1 {
-//            result.append(postfixes[i+1])
-//        } else {
-//            result.append(prefixes[i-1])
-//        }
-//    }
+    return output
+}
+
+// MARK: - Optimal solution with follow up
+func productExceptSelf(
+    _ nums: [Int] = [1,2,3,4]
+) -> [Int] {
     
-    print("prefixes: \(output)")
-//    print("postfixes: \(postfixes)")
+    var output = [Int](repeating: 1, count: nums.count)
+    var prefix = 1
+    
+    for i in 0..<nums.count {
+        output[i] = prefix
+        prefix *= nums[i]
+    }
+    
+    var postfix = 1
+    for i in (0..<nums.count).reversed() {
+        output[i] *= postfix
+        postfix *= nums[i]
+    }
+    
     return output
 }
