@@ -17,11 +17,22 @@ func groupAnagrams(
     var dict = [[Int]: [String]]()
 
     let aAsciiValue = Character("a").asciiValue!
+    
     for word in strs {
         
         var asciiCount = [Int](repeating: 0, count: 26)
+        
+        print("word: \(word)")
+        
         for char in word.utf8 {
+            print("char ascii \(): \(char)")
+            
+            print("\(char) - \(aAsciiValue) +1: = \(Int(char - aAsciiValue))")
+            
+            
             asciiCount[Int(char - aAsciiValue)] += 1
+            
+            print("asciiCount: \(asciiCount)")
         }
 
         dict[asciiCount, default: []].append(word)

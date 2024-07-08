@@ -97,3 +97,6 @@ print(
 print(
     "productExceptSelf: \(productExceptSelf())"
 )
+//print(
+//    "longestConsecutive: \(longestConsecutive())"
+//)
