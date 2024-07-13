@@ -5,7 +5,8 @@
 //  Created by Bakai Ismaiilov on 16/6/24.
 //
 
-/// Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+/// Given an unsorted array of integers nums, 
+/// return the length of the longest consecutive elements sequence.
 /// You must write an algorithm that runs in O(n) time.
 ///
 /// Example 1:
@@ -21,12 +22,22 @@
 /// 0 <= nums.length <= 105
 /// -109 <= nums[i] <= 109
 
-// [0, 1, 2, 3,  6, 7, 8, 9]
 func longestConsecutive(
-    _ nums: [Int]
+    _ nums: [Int] = [100, 4, 200, 1, 3, 2]
 ) -> Int {
     
-    var sortedOne = nums.sorted()
+    let numSet = Set(nums)
+    var longest = 0
     
-    return -1
+    for n in nums {
+        if !numSet.contains((n - 1)) {
+            var length = 0
+            
+            while numSet.contains((n + length)) {
+                length += 1
+            }
+            longest = max(length, longest)
+        }
+    }
+    return longest
 }
