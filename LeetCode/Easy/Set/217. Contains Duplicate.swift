@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 5/5/24.
 //
 
-import Foundation
-
 func containsDuplicate(
     _ nums: [Int] = [1,2,3,1]
 ) -> Bool {

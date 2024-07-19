@@ -100,3 +100,10 @@ print(
 print(
     "longestConsecutive: \(longestConsecutive())"
 )
+
+
+// MARK: -Repeat
+
+print(
+    "productExceptSelfRepeat: \(productExceptSelfRepeat())"
+)

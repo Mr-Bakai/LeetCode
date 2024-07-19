@@ -49,6 +49,8 @@ func productExceptSelf1(
         }
     }
     
+    print("First one: \(prefixes)")
+    
     let left = 0
     var right = nums.count - 1
     var postfixes = [Int](repeating: 0, count: nums.count)

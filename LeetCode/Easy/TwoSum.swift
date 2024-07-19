@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 9/3/24.
 //
 
-import Foundation
-
 // [2,7,11,15], target = 9
 func twoSum(
     _ nums: [Int],
