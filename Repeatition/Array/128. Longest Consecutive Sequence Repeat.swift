@@ -29,11 +29,11 @@ func longestConsecutiveRepeat(
 ) -> Int {
     
     let numSet = Set(nums)
-    var longest = 1
+    var longest = 0
     
     for i in numSet {
         if !numSet.contains(i-1) {
-            var length = 1
+            var length = 0
             while numSet.contains(i + length) {
                 length += 1
             }
