@@ -111,3 +111,7 @@ print(
 print(
     "longestConsecutiveRepeat: \(longestConsecutiveRepeat())"
 )
+
+print(
+    "twoSum2Repeat: \(twoSum2Repeat())"
+)

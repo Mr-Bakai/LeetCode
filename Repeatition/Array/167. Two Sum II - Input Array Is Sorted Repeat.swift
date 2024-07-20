@@ -1,8 +1,8 @@
 //
-//  167. Two Sum II - Input Array Is Sorted.swift
+//  167. Two Sum II - Input Array Is Sorted Repeat.swift
 //  LeetCode
 //
-//  Created by Bakai Ismaiilov on 21/3/24.
+//  Created by Bakai Ismaiilov on 20/7/24.
 //
 
 /// Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order,
@@ -14,8 +14,6 @@
 /// The tests are generated such that there is exactly one solution. You may not use the same element twice.
 ///
 /// Your solution must use only constant extra space.
-///
-///
 ///
 /// Example 1:
 ///
@@ -33,15 +31,15 @@
 /// Output: [1,2]
 /// Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 
-func twoSum2(
-    _ numbers: [Int],
-    _ target: Int
+func twoSum2Repeat(
+    _ numbers: [Int] = [5,25,75],
+    _ target: Int = 100
 ) -> [Int] {
     var left = 0
     var right = numbers.count - 1
     
-    while left < numbers.count && right < numbers.count {
-        if (numbers[left] + numbers[right]) == target {
+    while left <= right {
+        if target == numbers[left] + numbers[right] {
             left += 1
             right += 1
             return [left, right]
@@ -53,5 +51,5 @@ func twoSum2(
             right -= 1
         }
     }
-    return [-1, -1]
+    return [-1,-1]
 }
