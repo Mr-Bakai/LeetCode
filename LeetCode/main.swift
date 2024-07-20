@@ -107,3 +107,7 @@ print(
 print(
     "productExceptSelfRepeat: \(productExceptSelfRepeat())"
 )
+
+print(
+    "longestConsecutiveRepeat: \(longestConsecutiveRepeat())"
+)

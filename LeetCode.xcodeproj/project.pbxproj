@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3346E9712C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */; };
+		3346E9742C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */; };
 		33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */; };
 		33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */; };
 		33A3CC5F2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self Repeat.swift"; sourceTree = "<group>"; };
+		3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence Repeat.swift"; sourceTree = "<group>"; };
 		33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347. Top K Frequent Elements.swift"; sourceTree = "<group>"; };
 		33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self.swift"; sourceTree = "<group>"; };
 		33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence.swift"; sourceTree = "<group>"; };
@@ -113,9 +115,18 @@
 		3346E96F2C4A138F00FA6539 /* Repeatition */ = {
 			isa = PBXGroup;
 			children = (
-				3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */,
+				3346E9722C4A6CD100FA6539 /* Array */,
 			);
 			path = Repeatition;
+			sourceTree = "<group>";
+		};
+		3346E9722C4A6CD100FA6539 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */,
+				3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		33A3CC5D2C1EB3F500FCB4FA /* Array */ = {
@@ -318,6 +329,7 @@
 				6A5AEB922BCCD092009A7181 /* 658. Find K Closest Elements.swift in Sources */,
 				6AB7AC492BB97B8B008E8A90 /* 350. Intersection of Two Arrays II.swift in Sources */,
 				6A96C58E2BE3B66D0033DA41 /* 744. Find Smallest Letter Greater Than Target.swift in Sources */,
+				3346E9742C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift in Sources */,
 				6A65A2842BE7DA6900EAC365 /* 217. Contains Duplicate.swift in Sources */,
 				6ACCF4A02BB2FC0900FD2CEA /* 41. First Missing Positive.swift in Sources */,
 				6AEE72AE2BBBBAE400C497F4 /* 278. First Bad Version .swift in Sources */,
