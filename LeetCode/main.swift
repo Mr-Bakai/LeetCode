@@ -115,3 +115,7 @@ print(
 print(
     "twoSum2Repeat: \(twoSum2Repeat())"
 )
+
+print(
+    "threeSumClosestRepeat: \(threeSumClosestRepeat())"
+)

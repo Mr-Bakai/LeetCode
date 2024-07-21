@@ -1,8 +1,8 @@
 //
-//  16. 3Sum Closest.swift
+//  16. 3Sum Closest Repeat.swift
 //  LeetCode
 //
-//  Created by Bakai Ismaiilov on 22/3/24.
+//  Created by Bakai Ismaiilov on 21/7/24.
 //
 
 /// Given an integer array nums of length n and an integer target,
@@ -31,28 +31,34 @@
 /// * -1000 <= nums[i] <= 1000
 /// * -104 <= target <= 104
 
-
-func threeSumClosest(
-    _ nums: [Int],
-    _ target: Int
+func threeSumClosestRepeat(
+    _ nums: [Int] = [-1,2,1,-4],
+    _ target: Int = 1
 ) -> Int {
-    var differences = Int.max
-    let nums = nums.sorted()
+    
+    var difference = Int.max
     var result = 0
+    let nums = nums.sorted()
     
     for i in 0..<nums.count {
-        result = twoSum(nums, &differences, i, target)
+        result = twoSum(
+            i,
+            &difference,
+            nums,
+            target
+        )
     }
+    
     return result
 }
 
-// [-4,-1,1,2]
 private func twoSum(
-    _ nums: [Int],
-    _ difference: inout Int,
     _ i: Int,
+    _ difference: inout Int,
+    _ nums: [Int],
     _ target: Int
 ) -> Int {
+    
     var left = i + 1
     var right = (nums.count - 1)
     
