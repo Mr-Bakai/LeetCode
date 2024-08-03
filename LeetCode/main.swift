@@ -119,3 +119,7 @@ print(
 print(
     "threeSumClosestRepeat: \(threeSumClosestRepeat())"
 )
+
+print(
+    "searchInsertRepeat: \(searchInsertRepeat())"
+)
