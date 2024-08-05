@@ -14,6 +14,16 @@ func groupAnagramsRepeat(
 ) -> [[String]] {
     
     var dict = [[Int]: [String]]()
+    let aAsciiValue = Character("a").asciiValue!
     
-    return [[""]]
+    for word in strs {
+        var asciiCount = [Int](repeating: 0, count: 26)
+        
+        for char in word.utf8 {
+            asciiCount[Int(char - aAsciiValue)] += 1
+        }
+        
+        dict[asciiCount, default: []].append(word)
+    }
+    return Array(dict.values)
 }

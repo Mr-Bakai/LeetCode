@@ -123,3 +123,7 @@ print(
 print(
     "searchInsertRepeat: \(searchInsertRepeat())"
 )
+
+print(
+    "groupAnagramsRepeat: \(groupAnagramsRepeat())"
+)
