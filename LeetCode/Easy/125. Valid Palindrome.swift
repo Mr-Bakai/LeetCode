@@ -34,40 +34,9 @@
 /// 1 <= s.length <= 2 * 105
 /// s consists only of printable ASCII characters.
 
-
-/// bear it on your mind, `Alphanumeric`
-
 func isPalindrome(
-    _ s: String = "0P"
+    _ s: String = "A man, a plan, a canal: Panama"
 ) -> Bool {
-    
-    let s = s.filter { $0.isLetter }.lowercased()
-    
-    var left = 0
-    var right = s.count - 1
-    
-    if s.isEmpty {
-        return true
-    } else if s.count == 1 {
-        return false
-    }
-    
-    while left <= right {
-        if char(at: left, in: s) == char(at: right, in: s) {
-            left += 1
-            right -= 1
-        } else {
-            return false
-        }
-    }
-    return true
-}
-
-private func char(
-    at index: Int,
-    in string: String
-) -> Character? {
-    guard index >= 0, index < string.count else { return nil}
-    let stringIndex = string.index(string.startIndex, offsetBy: index)
-    return string[stringIndex]
+    let s = s.filter { $0.isLetter || $0.isNumber }.lowercased()
+    return s == String(s.reversed())
 }
