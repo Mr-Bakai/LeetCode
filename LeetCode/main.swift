@@ -100,6 +100,9 @@ print(
 print(
     "longestConsecutive: \(longestConsecutive())"
 )
+print(
+    "isPalindrome: \(isPalindrome())"
+)
 
 
 // MARK: -Repeat
