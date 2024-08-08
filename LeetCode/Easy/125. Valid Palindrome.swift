@@ -35,8 +35,39 @@
 /// s consists only of printable ASCII characters.
 
 func isPalindrome(
-    _ s: String = "A man, a plan, a canal: Panama"
+    _ s: String = "A man, a plan, a canal: Pana ma"
 ) -> Bool {
     let s = s.filter { $0.isLetter || $0.isNumber }.lowercased()
     return s == String(s.reversed())
+}
+
+func isPalindromeBestOption(
+    _ s: String = "A man, a plan, a canal: Panama"
+) -> Bool {
+    var l = 0
+    var r = s.count - 1
+    let chars = Array(s)
+    
+    while l < r {
+        while l < r && !alphaNum(chars[l]) {
+            l += 1
+        }
+        while r > l && !alphaNum(chars[r]) {
+            r -= 1
+        }
+        if chars[l].lowercased() != chars[r].lowercased() {
+            return false
+        }
+        l += 1
+        r -= 1
+    }
+    return true
+}
+
+func alphaNum(
+    _ c: Character
+) -> Bool {
+    (c >= "A" && c <= "Z") ||
+    (c >= "a" && c <= "z") ||
+    (c >= "0" && c <= "9")
 }
