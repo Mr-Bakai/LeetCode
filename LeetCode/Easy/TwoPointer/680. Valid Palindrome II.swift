@@ -25,16 +25,36 @@
 ///
 /// 1 <= s.length <= 105
 /// s consists of lowercase English letters.
+///
+/// ** after deleting at most one character **
 
 func validPalindrome(
-    _ s: String
+    _ s: String = "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"
 ) -> Bool {
     
     var left = 0
-    var right = s.count
+    var right = s.count - 1
+    var moved = false
+    
+    let s = Array(s)
     
     while left < right {
-        
+        if s[left] == s[right] {
+            left += 1
+            right -= 1
+        } else if !moved,
+                  (left + 1) <= right,
+                  (s[left + 1] == s[right]) {
+            left += 1
+            moved = true
+        } else if !moved,
+                  (right - 1 >= left),
+                  s[left] == s[right - 1] {
+            right -= 1
+            moved = true
+        } else {
+            return false
+        }
     }
     
     return true

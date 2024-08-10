@@ -106,6 +106,9 @@ print(
 print(
     "isPalindromeBestOption: \(isPalindromeBestOption())"
 )
+print(
+    "validPalindrome: \(validPalindrome())"
+)
 
 
 // MARK: -Repeat
