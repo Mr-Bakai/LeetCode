@@ -120,6 +120,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330835AB2C67580E002407BD /* TwoPointer */ = {
+			isa = PBXGroup;
+			children = (
+				3342BC332C631A1B00EE7F5B /* 125. Valid Palindrome.swift */,
+			);
+			path = TwoPointer;
+			sourceTree = "<group>";
+		};
 		3342BC282C5DF88300EE7F5B /* Easy */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +209,7 @@
 		6A4D8CB52B9DCC320009B0B6 /* Easy */ = {
 			isa = PBXGroup;
 			children = (
+				330835AB2C67580E002407BD /* TwoPointer */,
 				6AFF727E2BEA7DD600320B51 /* HashMap */,
 				6A65A2852BE7DA7700EAC365 /* Set */,
 				6A4D8CAD2B9C48240009B0B6 /* TwoSum.swift */,
@@ -215,7 +224,6 @@
 				6A9029292BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift */,
 				6A48EBD72BE2BBF4004E9026 /* 367. Valid Perfect Square.swift */,
 				6A96C58D2BE3B66D0033DA41 /* 744. Find Smallest Letter Greater Than Target.swift */,
-				3342BC332C631A1B00EE7F5B /* 125. Valid Palindrome.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
