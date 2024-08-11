@@ -38,17 +38,26 @@ func validPalindrome(
     
     while left < right {
         if characters[left] != characters[right] {
-            let skipL = String(characters[(left + 1)...right])
-            let skipR = String(characters[left..<(right)])
-            return isPalindrome2(skipL) || isPalindrome2(skipR)
+            return isPalindrome(characters, left + 1, right)
+            || isPalindrome(characters, left, right - 1)
         }
         left += 1
         right -= 1
     }
-    
     return true
 }
 
-private func isPalindrome2(_ s: String) -> Bool {
-    return s == String(s.reversed())
+private func isPalindrome(
+    _ characters: [Character],
+    _ left: Int,
+    _ right: Int
+) -> Bool {
+    var left = left
+    var right = right
+    while left < right {
+        if characters[left] != characters[right] { return false }
+        left += 1
+        right -= 1
+    }
+    return true
 }
