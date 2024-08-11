@@ -32,30 +32,23 @@ func validPalindrome(
     _ s: String = "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"
 ) -> Bool {
     
+    let characters = Array(s)
     var left = 0
-    var right = s.count - 1
-    var moved = false
-    
-    let s = Array(s)
+    var right = characters.count - 1
     
     while left < right {
-        if s[left] == s[right] {
-            left += 1
-            right -= 1
-        } else if !moved,
-                  (left + 1) <= right,
-                  (s[left + 1] == s[right]) {
-            left += 1
-            moved = true
-        } else if !moved,
-                  (right - 1 >= left),
-                  s[left] == s[right - 1] {
-            right -= 1
-            moved = true
-        } else {
-            return false
+        if characters[left] != characters[right] {
+            let skipL = String(characters[(left + 1)...right])
+            let skipR = String(characters[left..<(right)])
+            return isPalindrome2(skipL) || isPalindrome2(skipR)
         }
+        left += 1
+        right -= 1
     }
     
     return true
+}
+
+private func isPalindrome2(_ s: String) -> Bool {
+    return s == String(s.reversed())
 }
