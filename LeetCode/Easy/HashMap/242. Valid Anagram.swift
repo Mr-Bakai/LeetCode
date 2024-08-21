@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 7/5/24.
 //
 
-import Foundation
-
 func isAnagram(
     _ s: String = "aacc",
     _ t: String = "ccac"

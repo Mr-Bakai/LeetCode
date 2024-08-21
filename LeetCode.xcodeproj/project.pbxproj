@@ -18,6 +18,7 @@
 		339525472C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339525462C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift */; };
 		33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */; };
 		33A3CC5F2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */; };
+		33AF7FDC2C758EC200B74CAA /* 15. 3Sum Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF7FDB2C758EC200B74CAA /* 15. 3Sum Repeat.swift */; };
 		6A0945032BAC270D00C12EC0 /* 15. 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945022BAC270D00C12EC0 /* 15. 3Sum.swift */; };
 		6A0945052BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945042BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift */; };
 		6A0945092BACAD2E00C12EC0 /* 16. 3Sum Closest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0945082BACAD2E00C12EC0 /* 16. 3Sum Closest.swift */; };
@@ -76,6 +77,7 @@
 		339525462C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16. 3Sum Closest Repeat.swift"; sourceTree = "<group>"; };
 		33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self.swift"; sourceTree = "<group>"; };
 		33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence.swift"; sourceTree = "<group>"; };
+		33AF7FDB2C758EC200B74CAA /* 15. 3Sum Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15. 3Sum Repeat.swift"; sourceTree = "<group>"; };
 		6A0945022BAC270D00C12EC0 /* 15. 3Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15. 3Sum.swift"; sourceTree = "<group>"; };
 		6A0945042BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167. Two Sum II - Input Array Is Sorted.swift"; sourceTree = "<group>"; };
 		6A0945082BACAD2E00C12EC0 /* 16. 3Sum Closest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16. 3Sum Closest.swift"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */,
 				339525442C4BC30F00D36650 /* 167. Two Sum II - Input Array Is Sorted Repeat.swift */,
 				339525462C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift */,
+				33AF7FDB2C758EC200B74CAA /* 15. 3Sum Repeat.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				6A0945052BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift in Sources */,
 				6A300E452BB3BEA00027F6A8 /* 713. Subarray Product Less Than K.swift in Sources */,
 				6A4D8CAE2B9C48240009B0B6 /* TwoSum.swift in Sources */,
+				33AF7FDC2C758EC200B74CAA /* 15. 3Sum Repeat.swift in Sources */,
 				6AFF72812BEA872D00320B51 /* 49. Group Anagrams.swift in Sources */,
 				6AF3C37E2AF3BD29006B547B /* main.swift in Sources */,
 				33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */,
