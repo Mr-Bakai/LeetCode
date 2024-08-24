@@ -6,7 +6,11 @@
 //
 
 /// Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] 
-/// such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+/// such that 
+/// i != j,
+/// i != k, and
+/// j != k, and 
+/// nums[i] + nums[j] + nums[k] == 0.
 
 /// Notice that the solution set must not contain duplicate triplets.
 ///
@@ -40,8 +44,32 @@
 /// -105 <= nums[i] <= 105
 
 func threeSumRepeat(
-    _ nums: [Int]
+    _ nums: [Int] = [-1,0,1,2,-1,-4]
 ) -> [[Int]] {
     
+    // [-1,0,1,2,-1,-4]
+    
+    // [-1,-1,2], [-1,0,1]
+    
+    for i in 0..<nums.count {
+        searchTwoSum(i, nums)
+    }
+    
     return [[1]]
+}
+
+private func searchTwoSum(
+    _ i: Int,
+    _ nums: [Int]
+) {
+    var left = i + 1
+    let right = nums.count - 1
+    
+    while left < right {
+        let threeSum = nums[i] + nums[left] + nums[right]
+        
+        if threeSum == 0 {
+            
+        }
+    }
 }
