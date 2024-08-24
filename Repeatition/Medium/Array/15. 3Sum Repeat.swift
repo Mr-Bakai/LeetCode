@@ -46,18 +46,16 @@
 func threeSumRepeat(
     _ nums: [Int] = [-1,0,1,2,-1,-4]
 ) -> [[Int]] {
-    
-    // [-1,0,1,2,-1,-4]
-    
-    // [-1,-1,2], [-1,0,1]
     var result = [[Int]]()
+    let nums = nums.sorted()
     
     for i in 0..<nums.count {
-        searchTwoSum(
-            i,
-            nums,
-            &result
-        )
+        if nums[i] > 0 {
+            break
+        }
+        if i == 0 || nums[i - 1] != nums[i] {
+            searchTwoSum(i, nums, &result)
+        }
     }
     return result
 }
@@ -71,19 +69,18 @@ private func searchTwoSum(
     var right = nums.count - 1
     
     while left < right {
-        let threeSum = nums[i] + nums[left] + nums[right]
-        
-        if threeSum == 0 {
-            result.append(contentsOf: [[nums[i], nums[left], nums[right]]])
-        }
-        
-        right -= 1
-        
-        if left == right {
-            right = nums.count - 1
+        let sum = nums[i] + nums[left] + nums[right]
+        if sum < 0 {
             left += 1
-        } else if left == nums.count - 1 {
-            return
+        } else if sum > 0 {
+            right -= 1
+        } else {
+            result.append([nums[i], nums[left], nums[right]])
+            left += 1
+            right -= 1
+            while left < right && nums[left] == nums[left - 1] {
+                left += 1
+            }
         }
     }
 }
