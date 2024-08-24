@@ -50,26 +50,40 @@ func threeSumRepeat(
     // [-1,0,1,2,-1,-4]
     
     // [-1,-1,2], [-1,0,1]
+    var result = [[Int]]()
     
     for i in 0..<nums.count {
-        searchTwoSum(i, nums)
+        searchTwoSum(
+            i,
+            nums,
+            &result
+        )
     }
-    
-    return [[1]]
+    return result
 }
 
 private func searchTwoSum(
     _ i: Int,
-    _ nums: [Int]
+    _ nums: [Int],
+    _ result: inout [[Int]]
 ) {
     var left = i + 1
-    let right = nums.count - 1
+    var right = nums.count - 1
     
     while left < right {
         let threeSum = nums[i] + nums[left] + nums[right]
         
         if threeSum == 0 {
-            
+            result.append(contentsOf: [[nums[i], nums[left], nums[right]]])
+        }
+        
+        right -= 1
+        
+        if left == right {
+            right = nums.count - 1
+            left += 1
+        } else if left == nums.count - 1 {
+            return
         }
     }
 }
