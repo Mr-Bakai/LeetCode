@@ -43,8 +43,12 @@
 /// 3 <= nums.length <= 3000
 /// -105 <= nums[i] <= 105
 
+// corner case
+// [-2,0,0,2,2]
+// [[-2,0,2],[-2,0,2]]
+
 func threeSumRepeat(
-    _ nums: [Int] = [-1,0,1,2,-1,-4]
+    _ nums: [Int] = [-2, 0, 0, 2, 2]
 ) -> [[Int]] {
     var result = [[Int]]()
     let nums = nums.sorted()
