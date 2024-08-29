@@ -109,6 +109,9 @@ print(
 print(
     "validPalindrome: \(validPalindrome())"
 )
+print(
+    "isValidParentheses: \(isValidParentheses())"
+)
 
 
 // MARK: -Repeat

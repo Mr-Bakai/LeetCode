@@ -33,21 +33,36 @@
 /// Output: true
 ///
 ///
-///
 /// Constraints:
-///
 /// 1 <= s.length <= 104
 /// s consists of parentheses only '()[]{}'.
-
-func isValid(
+///
+func isValidParentheses(
     _ s: String = "([])"
 ) -> Bool {
     
-    var stack = [Character]()
+    /// Stack to keep track of opening brackets
+    var stack: [Character] = []
     
-    for char in s {
-        stack.append(char)
+    /// Dictionary to map closing brackets to their corresponding opening brackets
+    let closeToOpen: [Character: Character] = [")": "(", "]": "[", "}": "{"]
+    
+    for c in s {
+        
+        /// Check if the character is a closing bracket
+        if let openBracket = closeToOpen[c] {
+            
+            /// Check if the stack is not empty and the top of the
+            /// stack matches the corresponding opening bracket
+            if !stack.isEmpty && stack.last == openBracket {
+                stack.removeLast()
+            } else {
+                return false
+            }
+        } else {
+            stack.append(c)
+        }
     }
     
-    return false
+    return stack.isEmpty
 }
