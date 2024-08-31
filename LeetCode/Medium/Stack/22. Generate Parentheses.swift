@@ -32,7 +32,7 @@ func generateParenthesis(
         _ openN: Int,
         _ closedN: Int
     ) {
-        if openN == closedN && openN == n {
+        if openN == closedN, openN == n {
             res.append(stack.joined())
             return
         }
