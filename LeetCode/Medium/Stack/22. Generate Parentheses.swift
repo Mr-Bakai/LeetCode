@@ -25,5 +25,30 @@ func generateParenthesis(
     _ n: Int = 3
 ) -> [String] {
     
-    return [""]
+    var res = [String]()
+    var stack = [String]()
+    
+    func backtrack(
+        _ openN: Int,
+        _ closedN: Int
+    ) {
+        if openN == closedN && openN == n {
+            res.append(stack.joined())
+            return
+        }
+        
+        if openN < n {
+            stack.append("(")
+            backtrack(openN + 1, closedN)
+            stack.removeLast()
+        }
+        if closedN < openN {
+            stack.append(")")
+            backtrack(openN, closedN + 1)
+            stack.removeLast()
+        }
+    }
+    
+    backtrack(0, 0)
+    return res
 }
