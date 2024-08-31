@@ -112,7 +112,11 @@ print(
 print(
     "isValidParentheses: \(isValidParentheses())"
 )
+print(
+    "generateParenthesis: \(generateParenthesis())"
+)
 
+print("\n====================================")
 
 // MARK: -Repeat
 
