@@ -113,7 +113,7 @@ print(
     "isValidParentheses: \(isValidParentheses())"
 )
 print(
-    "generateParenthesis: \(generateParenthesis())"
+    "\n generateParenthesis: \(generateParenthesis())"
 )
 
 print("\n====================================")

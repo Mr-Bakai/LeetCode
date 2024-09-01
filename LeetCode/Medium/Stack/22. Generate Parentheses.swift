@@ -38,14 +38,20 @@ func generateParenthesis(
         }
         
         if openN < n {
+            print("openN: \(openN), n: \(n)")
             stack.append("(")
+            print("stack: \(stack)")
             backtrack(openN + 1, closedN)
             stack.removeLast()
+            print("stack: \(stack)")
         }
         if closedN < openN {
+            print("closedN: \(closedN), openN: \(openN)")
             stack.append(")")
+            print("stack: \(stack)")
             backtrack(openN, closedN + 1)
             stack.removeLast()
+            print("stack: \(stack)")
         }
     }
     
