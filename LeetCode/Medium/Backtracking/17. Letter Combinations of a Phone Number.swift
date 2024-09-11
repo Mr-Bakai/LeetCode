@@ -48,17 +48,17 @@ func letterCombinations(
     ]
     
     func backtrack(
-        _ index: Int,
-        _ current: String
+        _ i: Int,
+        _ currentString: String
     ) {
-        if current.count == digits.count {
-            res.append(current)
+        if currentString.count == digits.count {
+            res.append(currentString)
             return
         }
         
-        if let letters = digitToChar[digits[index]] {
+        if let letters = digitToChar[digits[i]] {
             for letter in letters {
-                backtrack(index + 1, current + String(letter))
+                backtrack(i + 1, currentString + String(letter))
             }
         }
     }
