@@ -5,7 +5,7 @@
 //  Created by Bakai Ismaiilov on 6/9/24.
 //
 
-/// Given a string containing digits from 2-9 inclusive, return all possible letter 
+/// Given a string containing digits from 2-9 inclusive, return all possible letter
 /// combinations that the number could represent. Return the answer in any order.
 ///
 /// A mapping of digits to letters (just like on the telephone buttons) is given below.
@@ -33,7 +33,9 @@ func letterCombinations(
     _ digits: String
 ) -> [String] {
     
-    var phoneNumbers: [String:String] = 
+    var digits = Array(digits)
+    var res: [String] = []
+    var digitToChar: [Character : String] =
     [
         "2": "abc",
         "3": "def",
@@ -45,5 +47,22 @@ func letterCombinations(
         "9": "wxyz"
     ]
     
-    return [""]
+    func backtrack(
+        _ index: Int,
+        _ current: String
+    ) {
+        if current.count == digits.count {
+            res.append(current)
+            return
+        }
+        
+        if let letters = digitToChar[digits[index]] {
+            for letter in letters {
+                backtrack(index + 1, current + String(letter))
+            }
+        }
+    }
+    
+    backtrack(0, "")
+    return res
 }
