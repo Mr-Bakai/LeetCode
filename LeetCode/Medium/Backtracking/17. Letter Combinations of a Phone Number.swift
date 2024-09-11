@@ -30,7 +30,7 @@
 /// digits[i] is a digit in the range ['2', '9'].
 
 func letterCombinations(
-    _ digits: String
+    _ digits: String = "23"
 ) -> [String] {
     
     var digits = Array(digits)

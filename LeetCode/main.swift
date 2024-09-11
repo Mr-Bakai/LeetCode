@@ -115,6 +115,9 @@ print(
 print(
     "\n generateParenthesis: \(generateParenthesis())"
 )
+print(
+    "\n letterCombinations: \(letterCombinations())"
+)
 
 print("\n====================================")
 
