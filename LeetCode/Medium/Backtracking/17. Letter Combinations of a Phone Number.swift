@@ -33,9 +33,9 @@ func letterCombinations(
     _ digits: String = "23"
 ) -> [String] {
     
-    var digits = Array(digits)
+    let digits = Array(digits)
     var res: [String] = []
-    var digitToChar: [Character : String] =
+    let digitToChar: [Character : String] =
     [
         "2": "abc",
         "3": "def",
