@@ -53,27 +53,28 @@
  */
 
 func nextGreaterElement(
-    _ nums1: [Int] = [2,4],
+    _ nums1: [Int] = [4,1,2],
     _ nums2: [Int] = [1,2,3,4]
 ) -> [Int] {
     
-    var result = [Int]()
+    var result = [Int](
+        repeating: -1,
+        count: nums1.count
+    )
     
-    for i in 0..<nums1.count - 1 {
+    for i in 0..<nums1.count {
         if let item = nums2.firstIndex(of: nums1[i]) {
             let match = nums2[item]
             var left = item
             let right = nums2.count - 1
             
-            while left < right {
-                if match >= nums2[left] {
-                    left += 1
-                } else {
-                    result.append(nums2[left])
-                    break
+            while left <= right {
+                if match < nums2[left] {
+                    result[i] = nums2[left]
+                    left = right
                 }
+                left += 1
             }
-            result.append(-1)
         }
     }
     return result
