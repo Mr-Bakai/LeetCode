@@ -6,7 +6,6 @@
 //
 
 /*
-
  The next greater element of some element x in an array is the first greater element that is to the right of x in the same array.
 
  You are given two distinct 0-indexed integer arrays nums1 and nums2, where nums1 is a subset of nums2.
@@ -54,10 +53,28 @@
  */
 
 func nextGreaterElement(
-    _ nums1: [Int],
-    _ nums2: [Int]
+    _ nums1: [Int] = [2,4],
+    _ nums2: [Int] = [1,2,3,4]
 ) -> [Int] {
     
+    var result = [Int]()
     
-    return [-1]
+    for i in 0..<nums1.count - 1 {
+        if let item = nums2.firstIndex(of: nums1[i]) {
+            let match = nums2[item]
+            var left = item
+            let right = nums2.count - 1
+            
+            while left < right {
+                if match >= nums2[left] {
+                    left += 1
+                } else {
+                    result.append(nums2[left])
+                    break
+                }
+            }
+            result.append(-1)
+        }
+    }
+    return result
 }

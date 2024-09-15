@@ -118,6 +118,9 @@ print(
 print(
     "\n letterCombinations: \(letterCombinations())"
 )
+print(
+    "\n nextGreaterElement: \(nextGreaterElement())"
+)
 
 print("\n====================================")
 
