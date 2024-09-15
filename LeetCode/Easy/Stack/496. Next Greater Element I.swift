@@ -77,6 +77,7 @@ func nextGreaterElement(
             }
         }
     }
+    nextGreaterElement3()
     return result
 }
 
@@ -117,4 +118,40 @@ func nextGreaterElement2(
     }
     
     return result
+}
+
+/// The most optimal solution
+func nextGreaterElement3(
+    _ nums1: [Int] = [4, 1, 2],
+    _ nums2: [Int] = [2, 1, 3, 4]
+) -> [Int] {
+    
+    var numsIdx: [Int: Int] = [:]
+    for (i, n) in nums1.enumerated() {
+        numsIdx[n] = i
+    }
+    
+    // [4, 1, 2]
+    // [2, 1, 3, 4]
+    
+    var res = Array(
+        repeating: -1,
+        count: nums1.count
+    )
+    var stack: [Int] = []
+    
+    for cur in nums2 {
+        while let last = stack.last, cur > last {
+            stack.removeLast()
+            if let idx = numsIdx[last] {
+                res[idx] = cur
+            }
+        }
+        if numsIdx[cur] != nil {
+            stack.append(cur)
+        }
+    }
+    
+    print(res)
+    return res
 }
