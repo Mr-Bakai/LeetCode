@@ -79,3 +79,42 @@ func nextGreaterElement(
     }
     return result
 }
+
+/// 2 option with hashMap
+func nextGreaterElement2(
+    _ nums1: [Int],
+    _ nums2: [Int]
+) -> [Int] {
+    
+    // Create a dictionary to map elements of nums1 to their indices
+    var nums1Indices = [Int: Int]()
+    for (index, num) in nums1.enumerated() {
+        nums1Indices[num] = index
+    }
+    
+    // Initialize the result array with -1
+    var result = Array(
+        repeating: -1,
+        count: nums1.count
+    )
+    
+    // Iterate over each element in nums2
+    for i in 0..<nums2.count {
+        
+        // If nums2[i] is not in nums1Indices, continue
+        guard let idx = nums1Indices[nums2[i]] else {
+            continue
+        }
+        
+        // Iterate from the next element to the end of nums2
+        for j in (i + 1)..<nums2.count {
+            if nums2[j] > nums2[i] {
+                // Set the result for the respective index to nums2[j]
+                result[idx] = nums2[j]
+                break
+            }
+        }
+    }
+    
+    return result
+}
