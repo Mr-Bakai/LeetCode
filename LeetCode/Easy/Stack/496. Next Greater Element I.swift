@@ -152,6 +152,5 @@ func nextGreaterElement3(
         }
     }
     
-    print(res)
     return res
 }
