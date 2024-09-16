@@ -121,6 +121,7 @@ func nextGreaterElement2(
 }
 
 /// The most optimal solution
+@discardableResult
 func nextGreaterElement3(
     _ nums1: [Int] = [4, 1, 2],
     _ nums2: [Int] = [2, 1, 3, 4]
