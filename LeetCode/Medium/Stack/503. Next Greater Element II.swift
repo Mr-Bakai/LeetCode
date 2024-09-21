@@ -8,6 +8,7 @@
 import Foundation
 
 /*
+ 
 Given a circular integer array nums (i.e., the next element of
 nums[nums.length - 1] is nums[0]),
 return the next greater number for every element in nums.
@@ -42,12 +43,29 @@ func nextGreaterElements(
     _ nums: [Int] = [1,2,1]
 ) -> [Int] {
     
-    var mappedIndexes: [Int: Int] = [:]
+    var mappedIndexes: [Int:Int] = [:]
+    var stack: [Int] = []
+    var res = [Int](
+        repeating: -1,
+        count: nums.count
+    )
     
-    for (index, num) in nums.enumerated() {
-        mappedIndexes[index] = num
+    for (index, value) in nums.enumerated() {
+        mappedIndexes[index] = value
     }
     
-    print(mappedIndexes)
-    return [1]
+    for cur in nums {
+        while let last = stack.last, cur > last {
+            stack.removeLast()
+            if let index = mappedIndexes[nums.firstIndex(of: last)!] {
+                res[index] = cur
+            }
+        }
+        
+        stack.append(cur)
+    }
+    
+    print(" test: \(res)")
+    print(" mappedIndexes: \(mappedIndexes)")
+    return res
 }
