@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 26/3/24.
 //
 
-import Foundation
-
 // Input: nums = [3,4,-1,1]
 // Output: 2
 // Explanation: 1 is in the array but 2 is missing.
