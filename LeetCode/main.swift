@@ -121,6 +121,9 @@ print(
 print(
     "\n nextGreaterElement: \(nextGreaterElement())"
 )
+print(
+    "\n nextGreaterElements: \(nextGreaterElements())"
+)
 
 print("\n====================================")
 
