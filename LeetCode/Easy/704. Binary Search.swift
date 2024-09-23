@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 10/3/24.
 //
 
-import Foundation
-
 func search(
     _ nums: [Int],
     _ target: Int

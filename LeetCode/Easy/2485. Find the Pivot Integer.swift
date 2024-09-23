@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 13/3/24.
 //
 
-import Foundation
-
 func pivotInteger(_ n: Int) -> Int {
     var left = 1
     var right = n

@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 10/3/24.
 //
 
-import Foundation
-
 // MARK: - Build in Set approach
 func intersection(
     _ nums1: [Int],

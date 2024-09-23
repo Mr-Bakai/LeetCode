@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 2/4/24.
 //
 
-import Foundation
-
 // Input: n = 5, bad = 4
 // Output: 4
 // Explanation:
