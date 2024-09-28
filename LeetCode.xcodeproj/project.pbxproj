@@ -13,6 +13,7 @@
 		3342BC342C631A1B00EE7F5B /* 125. Valid Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342BC332C631A1B00EE7F5B /* 125. Valid Palindrome.swift */; };
 		3346E9712C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */; };
 		3346E9742C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */; };
+		33762C612CA80C5100A13DC9 /* 682. Baseball Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */; };
 		33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */; };
 		339525452C4BC30F00D36650 /* 167. Two Sum II - Input Array Is Sorted Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339525442C4BC30F00D36650 /* 167. Two Sum II - Input Array Is Sorted Repeat.swift */; };
 		339525472C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339525462C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift */; };
@@ -78,6 +79,7 @@
 		3342BC332C631A1B00EE7F5B /* 125. Valid Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "125. Valid Palindrome.swift"; sourceTree = "<group>"; };
 		3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self Repeat.swift"; sourceTree = "<group>"; };
 		3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence Repeat.swift"; sourceTree = "<group>"; };
+		33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "682. Baseball Game.swift"; sourceTree = "<group>"; };
 		33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347. Top K Frequent Elements.swift"; sourceTree = "<group>"; };
 		339525442C4BC30F00D36650 /* 167. Two Sum II - Input Array Is Sorted Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167. Two Sum II - Input Array Is Sorted Repeat.swift"; sourceTree = "<group>"; };
 		339525462C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16. 3Sum Closest Repeat.swift"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				33EAEC262C7ED41300474220 /* 20. Valid Parentheses.swift */,
 				33E5C7082C967B510013D933 /* 496. Next Greater Element I.swift */,
+				33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				6AF3C37E2AF3BD29006B547B /* main.swift in Sources */,
 				33A3CC5A2C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift in Sources */,
 				6A09450F2BB040DF00C12EC0 /* 287. Find the Duplicate Number.swift in Sources */,
+				33762C612CA80C5100A13DC9 /* 682. Baseball Game.swift in Sources */,
 				33A3CC5F2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift in Sources */,
 				3342BC2A2C5DF89000EE7F5B /* 35. Search Insert Position Repeat.swift in Sources */,
 				3342BC322C60E30800EE7F5B /* 49. Group Anagrams Repeat.swift in Sources */,
