@@ -83,5 +83,11 @@ func calPoints(
     _ operations: [String]
 ) -> Int {
     
+    var stack = [Int]()
+    
+    for i in operations {
+        stack.append(Int(i) ?? 0)
+    }
+    
     return 5
 }
