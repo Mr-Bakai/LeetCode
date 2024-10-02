@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 28/9/24.
 //
 
-import Foundation
-
 /*
  You are keeping the scores for a baseball game with strange rules. 
  At the beginning of the game, you start with an empty record.
