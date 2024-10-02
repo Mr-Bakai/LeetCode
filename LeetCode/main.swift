@@ -122,6 +122,9 @@ print(
 print(
     "\n nextGreaterElements: \(nextGreaterElements())"
 )
+print(
+    "\n calPoints: \(calPoints())"
+)
 
 print("\n====================================")
 

@@ -78,14 +78,20 @@
  */
 
 func calPoints(
-    _ operations: [String]
+    _ operations: [String] = ["5","-2","4","C","D","9","+","+"]
 ) -> Int {
-    
     var stack = [Int]()
     
     for i in operations {
-        stack.append(Int(i) ?? 0)
+        if i == "C" {
+            stack.removeLast()
+        } else if i == "D", let last = stack.last {
+            stack.append(last * 2)
+        } else if i == "+", stack.count > 1 {
+            stack.append(stack[stack.count - 1] + stack[stack.count - 2])
+        } else {
+            stack.append(Int(i) ?? 0)
+        }
     }
-    
-    return 5
+    return stack.reduce(0, +)
 }
