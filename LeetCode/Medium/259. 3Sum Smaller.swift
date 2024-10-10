@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 22/3/24.
 //
 
-import Foundation
-
 func threeSumSmaller(
     _ nums: [Int],
     _ target: Int

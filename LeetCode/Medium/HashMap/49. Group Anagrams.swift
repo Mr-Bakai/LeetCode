@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 7/5/24.
 //
 
-import Foundation
-
 // Example 1:
 //
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
