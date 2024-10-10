@@ -55,3 +55,35 @@ import Foundation
  In other words, performing n operations will take overall O(n) time
  even if one of those operations may take longer.
  */
+
+class MyQueue {
+
+    init() {
+        
+    }
+    
+    func push(_ x: Int) {
+        
+    }
+    
+    func pop() -> Int {
+        return 0
+    }
+    
+    func peek() -> Int {
+        return 0
+    }
+    
+    func empty() -> Bool {
+        return false
+    }
+}
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * let obj = MyQueue()
+ * obj.push(x)
+ * let ret_2: Int = obj.pop()
+ * let ret_3: Int = obj.peek()
+ * let ret_4: Bool = obj.empty()
+ */
