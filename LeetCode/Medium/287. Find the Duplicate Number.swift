@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 24/3/24.
 //
 
-import Foundation
-
 // pigeonhole principle
 func findDuplicate(
     _ nums: [Int]
