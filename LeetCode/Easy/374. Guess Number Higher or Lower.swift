@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 7/4/24.
 //
 
-import Foundation
-
 func guessNumber(_ n: Int) -> Int {
     if guess(n) == 0 { return n }
     var left = 0

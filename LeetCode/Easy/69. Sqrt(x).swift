@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 7/4/24.
 //
 
-import Foundation
-
 func mySqrt(_ x: Int) -> Int {
     if x < 2 { return x }
     

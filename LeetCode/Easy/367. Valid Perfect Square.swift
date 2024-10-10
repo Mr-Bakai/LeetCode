@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 2/5/24.
 //
 
-import Foundation
-
 func isPerfectSquare(
     _ num: Int = 2
 ) -> Bool {
