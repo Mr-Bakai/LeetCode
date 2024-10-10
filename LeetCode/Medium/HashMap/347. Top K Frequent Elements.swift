@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 12/6/24.
 //
 
-import Foundation
-
 /// K is never going to be greater than input array
 ///
 /// Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.

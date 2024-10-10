@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 2/5/24.
 //
 
-import Foundation
-
 /// Example 1:
 ///
 /// Input: letters = ["c","f","j"], target = "a"
