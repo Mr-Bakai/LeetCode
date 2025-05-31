@@ -9,7 +9,7 @@ print(
     twoSum([3,3], 6)
 )
 print(
-    twoSumSecond([1,2,5], 6)
+    "twoSumSecond: \(twoSumSecond([1,2,5], 6))"
 )
 print(
     getCommonVariant2([1,2,3], [2,3])
@@ -156,4 +156,8 @@ print(
 
 print(
     "threeSumRepeat: \(threeSumRepeat())"
+)
+
+print(
+    "twoSumRepeat: \(twoSumRepeat())"
 )
