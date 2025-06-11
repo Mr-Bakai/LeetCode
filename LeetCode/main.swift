@@ -161,3 +161,7 @@ print(
 print(
     "twoSumRepeat: \(twoSumRepeat())"
 )
+
+print(
+    "containsDuplicateRepetition: \(containsDuplicateRepetition())"
+)
