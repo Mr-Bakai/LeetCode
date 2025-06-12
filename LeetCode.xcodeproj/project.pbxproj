@@ -16,6 +16,7 @@
 		3346E9712C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */; };
 		3346E9742C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */; };
 		3350BB952DF9CDF500516A13 /* 217. Contains Duplicate Repetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350BB942DF9CDF500516A13 /* 217. Contains Duplicate Repetition.swift */; };
+		3350BB972DFA850900516A13 /* 242. Valid Anagram Repetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350BB962DFA850900516A13 /* 242. Valid Anagram Repetition.swift */; };
 		33762C612CA80C5100A13DC9 /* 682. Baseball Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */; };
 		33762C672CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33762C662CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift */; };
 		33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */; };
@@ -86,6 +87,7 @@
 		3346E9702C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "238. Product of Array Except Self Repeat.swift"; sourceTree = "<group>"; };
 		3346E9732C4A6CEE00FA6539 /* 128. Longest Consecutive Sequence Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence Repeat.swift"; sourceTree = "<group>"; };
 		3350BB942DF9CDF500516A13 /* 217. Contains Duplicate Repetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "217. Contains Duplicate Repetition.swift"; sourceTree = "<group>"; };
+		3350BB962DFA850900516A13 /* 242. Valid Anagram Repetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242. Valid Anagram Repetition.swift"; sourceTree = "<group>"; };
 		33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "682. Baseball Game.swift"; sourceTree = "<group>"; };
 		33762C662CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "225. Implement Stack using Queues.swift"; sourceTree = "<group>"; };
 		33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347. Top K Frequent Elements.swift"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				3342BC292C5DF89000EE7F5B /* 35. Search Insert Position Repeat.swift */,
 				332F52612DE489C500AD8A13 /* Two Sum Repetition.swift */,
 				3350BB942DF9CDF500516A13 /* 217. Contains Duplicate Repetition.swift */,
+				3350BB962DFA850900516A13 /* 242. Valid Anagram Repetition.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				6AFF727D2BEA6DC200320B51 /* 242. Valid Anagram.swift in Sources */,
 				6A90292A2BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift in Sources */,
 				6A4D8CB22B9DBC230009B0B6 /* 349. Intersection of Two Arrays.swift in Sources */,
+				3350BB972DFA850900516A13 /* 242. Valid Anagram Repetition.swift in Sources */,
 				3346E9712C4A13BC00FA6539 /* 238. Product of Array Except Self Repeat.swift in Sources */,
 				6A5AEB922BCCD092009A7181 /* 658. Find K Closest Elements.swift in Sources */,
 				332F52622DE489C500AD8A13 /* Two Sum Repetition.swift in Sources */,

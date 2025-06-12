@@ -165,3 +165,7 @@ print(
 print(
     "containsDuplicateRepetition: \(containsDuplicateRepetition())"
 )
+
+print(
+    "isAnagramRep: \(isAnagramRep())"
+)
