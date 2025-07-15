@@ -11,8 +11,8 @@ func isAnagram(
 ) -> Bool {
     guard s.count == t.count else { return false }
     
-    var dictS = [Character:Int]()
-    var dictT = [Character:Int]()
+    var dictS = [Character : Int]()
+    var dictT = [Character : Int]()
     
     for i in s {
         dictS[i, default: 0] += 1
