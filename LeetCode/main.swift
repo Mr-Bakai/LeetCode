@@ -169,3 +169,11 @@ print(
 print(
     "isAnagramRep: \(isAnagramRep())"
 )
+
+print(
+    "encode: \(EncodeAndDecodeString.encode(["Need","code"]))"
+)
+
+print(
+    "decode: \(EncodeAndDecodeString.decode("4#Need4#code"))"
+)

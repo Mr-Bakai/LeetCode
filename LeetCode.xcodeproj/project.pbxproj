@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		330835AD2C675834002407BD /* 680. Valid Palindrome II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330835AC2C675834002407BD /* 680. Valid Palindrome II.swift */; };
+		3310D04C2E36089F00B8EF6A /* EncodeAndDecodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310D04B2E36089F00B8EF6A /* EncodeAndDecodeString.swift */; };
 		332F52622DE489C500AD8A13 /* Two Sum Repetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F52612DE489C500AD8A13 /* Two Sum Repetition.swift */; };
 		3342BC2A2C5DF89000EE7F5B /* 35. Search Insert Position Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342BC292C5DF89000EE7F5B /* 35. Search Insert Position Repeat.swift */; };
 		3342BC322C60E30800EE7F5B /* 49. Group Anagrams Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342BC312C60E30800EE7F5B /* 49. Group Anagrams Repeat.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		330835AC2C675834002407BD /* 680. Valid Palindrome II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "680. Valid Palindrome II.swift"; sourceTree = "<group>"; };
+		3310D04B2E36089F00B8EF6A /* EncodeAndDecodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeAndDecodeString.swift; sourceTree = "<group>"; };
 		332F52612DE489C500AD8A13 /* Two Sum Repetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Two Sum Repetition.swift"; sourceTree = "<group>"; };
 		3342BC292C5DF89000EE7F5B /* 35. Search Insert Position Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35. Search Insert Position Repeat.swift"; sourceTree = "<group>"; };
 		3342BC312C60E30800EE7F5B /* 49. Group Anagrams Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "49. Group Anagrams Repeat.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 		33A3CC5D2C1EB3F500FCB4FA /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				3310D04B2E36089F00B8EF6A /* EncodeAndDecodeString.swift */,
 				33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */,
 				33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */,
 			);
@@ -415,6 +418,7 @@
 			files = (
 				3343866E2CB79E8700C114FC /* 232. Implement Queue using Stacks.swift in Sources */,
 				6A53DF302BBE4D000002D782 /* 1060. Missing Element in Sorted Array.swift in Sources */,
+				3310D04C2E36089F00B8EF6A /* EncodeAndDecodeString.swift in Sources */,
 				6A4D8CB42B9DCC250009B0B6 /* 35. Search Insert Position.swift in Sources */,
 				6A0945052BAC2F9600C12EC0 /* 167. Two Sum II - Input Array Is Sorted.swift in Sources */,
 				33EAEC272C7ED41300474220 /* 20. Valid Parentheses.swift in Sources */,
@@ -596,6 +600,7 @@
 		6AF3C3822AF3BD29006B547B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4YVF8268F;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -607,6 +612,7 @@
 		6AF3C3832AF3BD29006B547B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4YVF8268F;
 				ENABLE_HARDENED_RUNTIME = YES;
