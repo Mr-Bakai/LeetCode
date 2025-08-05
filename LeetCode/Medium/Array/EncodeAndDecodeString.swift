@@ -7,6 +7,7 @@
 
 struct EncodeAndDecodeString {
     
+    // ["Need", "Code"]
     public static func encode(_ strs: [String]) -> String {
         var res = ""
         for word in strs {
@@ -15,6 +16,7 @@ struct EncodeAndDecodeString {
         return res
     }
     
+    // "4#Need4#code"
     public static func decode(_ s: String) -> [String] {
         var res = [String]()
         let sArr = Array(s)
