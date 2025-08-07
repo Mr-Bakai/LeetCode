@@ -28,6 +28,7 @@
 		33A3CC5F2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */; };
 		33AF7FDC2C758EC200B74CAA /* 15. 3Sum Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF7FDB2C758EC200B74CAA /* 15. 3Sum Repeat.swift */; };
 		33BC53532C8A94660020809D /* 17. Letter Combinations of a Phone Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC53522C8A94660020809D /* 17. Letter Combinations of a Phone Number.swift */; };
+		33D669002E447E5B0062339E /* 36. Valid Sudoku - Explanation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D668FF2E447E5B0062339E /* 36. Valid Sudoku - Explanation.swift */; };
 		33D8444C2C830EE60057CA85 /* 22. Generate Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8444B2C830EE60057CA85 /* 22. Generate Parentheses.swift */; };
 		33E5C7092C967B510013D933 /* 496. Next Greater Element I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5C7082C967B510013D933 /* 496. Next Greater Element I.swift */; };
 		33EAEC272C7ED41300474220 /* 20. Valid Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EAEC262C7ED41300474220 /* 20. Valid Parentheses.swift */; };
@@ -100,6 +101,7 @@
 		33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "128. Longest Consecutive Sequence.swift"; sourceTree = "<group>"; };
 		33AF7FDB2C758EC200B74CAA /* 15. 3Sum Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15. 3Sum Repeat.swift"; sourceTree = "<group>"; };
 		33BC53522C8A94660020809D /* 17. Letter Combinations of a Phone Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "17. Letter Combinations of a Phone Number.swift"; sourceTree = "<group>"; };
+		33D668FF2E447E5B0062339E /* 36. Valid Sudoku - Explanation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "36. Valid Sudoku - Explanation.swift"; sourceTree = "<group>"; };
 		33D8444B2C830EE60057CA85 /* 22. Generate Parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "22. Generate Parentheses.swift"; sourceTree = "<group>"; };
 		33E5C7082C967B510013D933 /* 496. Next Greater Element I.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "496. Next Greater Element I.swift"; sourceTree = "<group>"; };
 		33EAEC262C7ED41300474220 /* 20. Valid Parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20. Valid Parentheses.swift"; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				3310D04B2E36089F00B8EF6A /* EncodeAndDecodeString.swift */,
 				33A3CC5E2C1EECF500FCB4FA /* 128. Longest Consecutive Sequence.swift */,
 				33A3CC592C1BE43F00FCB4FA /* 238. Product of Array Except Self.swift */,
+				33D668FF2E447E5B0062339E /* 36. Valid Sudoku - Explanation.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				339525472C4CDDBB00D36650 /* 16. 3Sum Closest Repeat.swift in Sources */,
 				330835AD2C675834002407BD /* 680. Valid Palindrome II.swift in Sources */,
 				6A9029282BC29A1E00912B4B /* 33. Search in Rotated Sorted Array.swift in Sources */,
+				33D669002E447E5B0062339E /* 36. Valid Sudoku - Explanation.swift in Sources */,
 				33762C672CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift in Sources */,
 				6AFF727D2BEA6DC200320B51 /* 242. Valid Anagram.swift in Sources */,
 				6A90292A2BC29A6100912B4B /* 374. Guess Number Higher or Lower.swift in Sources */,
