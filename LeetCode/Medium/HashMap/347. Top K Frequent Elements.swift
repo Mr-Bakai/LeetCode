@@ -59,12 +59,7 @@ func topKFrequentBucketSort(
         count[num, default: 0] += 1
     }
     
-    // key = number
-    // value = frequency
-    
     for (num, cnt) in count {
-        
-        // [ [], [], [], [], [], [], [] ]
         freq[cnt].append(num)
     }
     
