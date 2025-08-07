@@ -177,3 +177,7 @@ print(
 print(
     "decode: \(EncodeAndDecodeString.decode("4#Need4#code"))"
 )
+
+print(
+    "valid sudoku: \(isValidSudoku())"
+)
