@@ -18,9 +18,12 @@
 /// Output: [1]
 
 func topKFrequent(
-    _ nums: [Int] = [1,2],
+    _ nums: [Int] = [1, 1, 1, 2, 2, 3],
     _ k: Int = 2
 ) -> [Int] {
+    
+    topKFrequentBucketSort()
+    
     if nums.count == 1 { return nums }
     var left = 0
     let right = nums.count
@@ -39,19 +42,29 @@ func topKFrequent(
     .map{$0.key}
 }
 
+@discardableResult
 func topKFrequentBucketSort(
-    _ nums: [Int] = [1,2],
+    _ nums: [Int] = [1, 1, 1, 2, 2, 3],
     _ k: Int = 2
 ) -> [Int] {
     
+    /// You can’t go straight from nums to freq because:
+    /// You don’t know in advance how many times a number appears
+    /// You need that frequency count first
     var count = [Int: Int]()
+    
     var freq = [[Int]](repeating: [], count: nums.count + 1)
     
     for num in nums {
         count[num, default: 0] += 1
     }
     
+    // key = number
+    // value = frequency
+    
     for (num, cnt) in count {
+        
+        // [ [], [], [], [], [], [], [] ]
         freq[cnt].append(num)
     }
     
