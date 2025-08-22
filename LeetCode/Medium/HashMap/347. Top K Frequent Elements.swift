@@ -53,6 +53,10 @@ func topKFrequentBucketSort(
     /// You need that frequency count first
     var count = [Int: Int]()
     
+    /// We have a bucket array
+    /// Because multiple numbers can have the same frequency.
+    /// for instance 1,1,1 and 2,2,2 have the same frequency (3)
+    /// so both stored at the same index [3] = [1,2]
     var freq = [[Int]](repeating: [], count: nums.count + 1)
     
     for num in nums {
