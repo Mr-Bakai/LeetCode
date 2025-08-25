@@ -57,6 +57,18 @@ func topKFrequentBucketSort(
     /// Because multiple numbers can have the same frequency.
     /// for instance 1,1,1 and 2,2,2 have the same frequency (3)
     /// so both stored at the same index [3] = [1,2]
+    ///
+    /// why it is `nums.count + 1` ?
+    /// Максимальная возможная частота любого числа — это `n = nums.count` (случай, когда все элементы одинаковые).
+    /// let's say all are `5` and we wanna access it via `freq[5]`
+    /// this would be `index out of bound` if we use `nums.count` because array starts from `0`
+    /// [0,  0,  0,  0,  0]
+    ///  0   1   2   3   4 ----->`nums.count`
+    ///
+    /// that is the reason we do `nums.count + 1`
+    /// [0,  0,  0,  0,  0, 5]
+    ///  0   1   2   3   4  5
+    ///
     var freq = [[Int]](repeating: [], count: nums.count + 1)
     
     for num in nums {
