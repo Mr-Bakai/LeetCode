@@ -33,27 +33,25 @@ func findKthLargest(
     _ nums: [Int] = [3,2,1,5,6,6,4],
     _ k: Int = 3
 ) -> Int {
-    var arrNums = nums                 // make a mutable copy (LeetCode passes arrays by value)
-    let arraySize = arrNums.count              // cache length
-    let target = arraySize - k           // convert "k-th largest" to 0-based index in ascending order
+    var arrNums = nums
+    let arraySize = arrNums.count
+    let target = arraySize - k
     
     // Inner recursive function: quickselect on inclusive range [l, r]
-    
     func quickSelect(_ left: Int, _ right: Int) -> Int {
-        let pivot = arrNums[right]         // choose rightmost element as pivot (same as your Python)
-        var p = left                      // 'p' will be the final index of the pivot after partition
+        let pivot = arrNums[right]
+        var p = left
         
-        // Partition: move elements <= pivot to the left side of the window
-        if left < right {                   // skip the loop when the window is size 1
-            for i in left..<right {         // iterate over all elements except the pivot at 'right'
-                if arrNums[i] <= pivot {   // keep elements <= pivot on the left
-                    arrNums.swapAt(p, i)   // place current element at position 'p'
-                    p += 1                 // advance the boundary of the <= region
+        if left < right {
+            for i in left..<right {
+                if arrNums[i] <= pivot {
+                    arrNums.swapAt(p, i)
+                    p += 1
                 }
             }
         }
         
-        arrNums.swapAt(p, right)           // put pivot into its final position at index 'p'
+        arrNums.swapAt(p, right)
         
         // Recurse into the half that contains the 'target' index
         if p > target {
