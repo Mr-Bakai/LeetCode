@@ -181,3 +181,7 @@ print(
 print(
     "valid sudoku: \(isValidSudoku())"
 )
+
+print(
+    "findKthLargest: \(findKthLargest())"
+)
