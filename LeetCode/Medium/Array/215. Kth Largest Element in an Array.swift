@@ -40,31 +40,31 @@ func findKthLargest(
     // Inner recursive function: quickselect on inclusive range [l, r]
     func quickSelect(_ left: Int, _ right: Int) -> Int {
         let pivot = arrNums[right]
-        var p = left
+        var pointer = left
         
         if left < right {
             for i in left..<right {
                 if arrNums[i] <= pivot {
-                    arrNums.swapAt(p, i)
-                    p += 1
+                    arrNums.swapAt(pointer, i)
+                    pointer += 1
                 }
             }
         }
         
-        arrNums.swapAt(p, right)
+        arrNums.swapAt(pointer, right)
         
         // Recurse into the half that contains the 'target' index
-        if p > target {
+        if pointer > target {
             // target index is smaller than p → it must be somewhere in the LEFT block
-            return quickSelect(left, p - 1)
+            return quickSelect(left, pointer - 1)
             
             // target index is larger than p → it must be somewhere in the RIGHT block
-        } else if p < target {
-            return quickSelect(p + 1, right)
+        } else if pointer < target {
+            return quickSelect(pointer + 1, right)
             
         } else {
             // p == target → the pivot landed exactly where the k-th largest should be
-            return arrNums[p]
+            return arrNums[pointer]
         }
     }
     
