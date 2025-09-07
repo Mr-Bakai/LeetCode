@@ -5,8 +5,6 @@
 //  Created by Bakai Ismaiilov on 31/8/25.
 //
 
-import Foundation
-
 /*
  Here’s the core understanding you need—without restating the task, giving a solution, or hinting at one:
  
@@ -33,25 +31,27 @@ func findKthLargest(
     _ nums: [Int] = [3,2,1,5,6,6,4],
     _ k: Int = 3
 ) -> Int {
-    var arrNums = nums
-    let arraySize = arrNums.count
+    var mutNums = nums
+    var arraySize = nums.count
     let target = arraySize - k
     
-    // Inner recursive function: quickselect on inclusive range [l, r]
-    func quickSelect(_ left: Int, _ right: Int) -> Int {
-        let pivot = arrNums[right]
+    func quickSelect(
+        _ left: Int,
+        _ right: Int
+    ) -> Int {
+        let pivot = mutNums[right]
         var pointer = left
         
         if left < right {
             for i in left..<right {
-                if arrNums[i] <= pivot {
-                    arrNums.swapAt(pointer, i)
+                if mutNums[i] <= pivot {
+                    mutNums.swapAt(pointer, i)
                     pointer += 1
                 }
             }
         }
         
-        arrNums.swapAt(pointer, right)
+        mutNums.swapAt(pointer, right)
         
         // Recurse into the half that contains the 'target' index
         if pointer > target {
@@ -64,9 +64,9 @@ func findKthLargest(
             
         } else {
             // p == target → the pivot landed exactly where the k-th largest should be
-            return arrNums[pointer]
+            return mutNums[pointer]
         }
     }
     
-    return quickSelect(0, arraySize - 1) // start with the full array range
+    return quickSelect(0, arraySize - 1)
 }
