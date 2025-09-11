@@ -189,3 +189,7 @@ print(
 print(
     "romanToInt: \(romanToInt())"
 )
+
+print(
+    "longestCommonPrefix: \(longestCommonPrefix())"
+)
