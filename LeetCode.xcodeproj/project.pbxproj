@@ -22,6 +22,7 @@
 		33566C5D2E6FCB6E0056DDAB /* 13. Roman to Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33566C5C2E6FCB6E0056DDAB /* 13. Roman to Integer.swift */; };
 		33566C602E726AD50056DDAB /* 14. Longest Common Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33566C5F2E726AD50056DDAB /* 14. Longest Common Prefix.swift */; };
 		33566C632E731B6B0056DDAB /* 26. Remove Duplicates from Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33566C622E731B6B0056DDAB /* 26. Remove Duplicates from Sorted Array.swift */; };
+		3370B4B42E76763800AC68F2 /* 27. Remove Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370B4B32E76763800AC68F2 /* 27. Remove Element.swift */; };
 		33762C612CA80C5100A13DC9 /* 682. Baseball Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */; };
 		33762C672CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33762C662CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift */; };
 		33916B722C19420000614728 /* 347. Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */; };
@@ -99,6 +100,7 @@
 		33566C5C2E6FCB6E0056DDAB /* 13. Roman to Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13. Roman to Integer.swift"; sourceTree = "<group>"; };
 		33566C5F2E726AD50056DDAB /* 14. Longest Common Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "14. Longest Common Prefix.swift"; sourceTree = "<group>"; };
 		33566C622E731B6B0056DDAB /* 26. Remove Duplicates from Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "26. Remove Duplicates from Sorted Array.swift"; sourceTree = "<group>"; };
+		3370B4B32E76763800AC68F2 /* 27. Remove Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27. Remove Element.swift"; sourceTree = "<group>"; };
 		33762C602CA80C5100A13DC9 /* 682. Baseball Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "682. Baseball Game.swift"; sourceTree = "<group>"; };
 		33762C662CAF8CAC00A13DC9 /* 225. Implement Stack using Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "225. Implement Stack using Queues.swift"; sourceTree = "<group>"; };
 		33916B712C19420000614728 /* 347. Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347. Top K Frequent Elements.swift"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				33566C5F2E726AD50056DDAB /* 14. Longest Common Prefix.swift */,
 				33566C622E731B6B0056DDAB /* 26. Remove Duplicates from Sorted Array.swift */,
+				3370B4B32E76763800AC68F2 /* 27. Remove Element.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				3342BC342C631A1B00EE7F5B /* 125. Valid Palindrome.swift in Sources */,
 				33566C5D2E6FCB6E0056DDAB /* 13. Roman to Integer.swift in Sources */,
 				6ACD06552BCA6DD900C557DB /* 153. Find Minimum in Rotated Sorted Array.swift in Sources */,
+				3370B4B42E76763800AC68F2 /* 27. Remove Element.swift in Sources */,
 				339525452C4BC30F00D36650 /* 167. Two Sum II - Input Array Is Sorted Repeat.swift in Sources */,
 				33E5C7092C967B510013D933 /* 496. Next Greater Element I.swift in Sources */,
 				6A4D8CB72B9DDA540009B0B6 /* 704. Binary Search.swift in Sources */,
