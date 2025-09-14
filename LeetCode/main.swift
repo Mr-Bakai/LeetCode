@@ -199,3 +199,9 @@ var nums = [1, 1, 1, 2, 2, 2, 2, 3, 4, 4, 4]
 print(
     "removeDuplicates: \(removeDuplicates(&nums))"
 )
+
+var nums2: [Int] = []
+
+print(
+    "removeElements: \(removeElement(&nums2, 2))"
+)
