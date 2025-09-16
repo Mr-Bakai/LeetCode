@@ -22,9 +22,42 @@
 // Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ///
 func strStr(
-    _ haystack: String,
-    _ needle: String
+    _ haystack: String = "ycacandoit",
+    _ needle: String = "can"
 ) -> Int {
     
-    return -1
+    let arrHaystack = Array(haystack)
+    let arrNeedle = Array(needle)
+    
+    // s a d b u t s a d
+    // 0 1 2 3 4 5 6 7 8
+    
+    // s a d
+    // 0 1 2
+    
+    // l e e t c o d e
+    // 0 1 2 3 4 5 6 7
+    
+    // l e e t o
+    // 0 1 2 3 4
+    
+    
+    // y o u c a n d o i t
+    // 0 1 2 3 4 5 6 7 8 9
+    
+    // c a n
+    // 0 1 2
+    
+    // y c a c a n d o i t
+    // 0 1 2 3 4 5 6 7 8 9
+    
+    // c a n
+    // 0 1 2
+    
+    var pointer = 0
+    
+    for i in 0..<arrHaystack.count {
+        
+    }
+    return pointer
 }

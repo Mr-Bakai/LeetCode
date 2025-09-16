@@ -205,3 +205,7 @@ var nums2: [Int] = []
 print(
     "removeElements: \(removeElement(&nums2, 2))"
 )
+
+print(
+    "strStr: \(strStr())"
+)
