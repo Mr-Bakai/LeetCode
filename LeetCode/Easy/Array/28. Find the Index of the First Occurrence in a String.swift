@@ -35,10 +35,11 @@ func strStr(
     _ haystack: String,
     _ needle: String
 ) -> Int {
-    let haystak = Array(haystack)
-    let needle = Array(needle)
     
-    if needle.isEmpty { return 0 }
+    let H = Array(haystack)
+    let N = Array(needle)
+    
+    if N.isEmpty { return 0 }
     
     // s a d b u t s a d
     // 0 1 2 3 4 5 6 7 8
@@ -47,14 +48,14 @@ func strStr(
     // 0 1 2
 
     // Loop over valid start positions in haystack
-    for i in 0...(haystak.count - needle.count) {
+    for i in 0...(H.count - N.count) {
         var j = 0
         // Compare needle against substring starting at i
-        while j < needle.count {
-            if haystak[i + j] != needle[j] {   // mismatch → break inner loop
+        while j < N.count {
+            if H[i + j] != N[j] {   // mismatch → break inner loop
                 break
             }
-            if j == needle.count - 1 {        // matched all chars → success
+            if j == N.count - 1 {   // matched all chars → success
                 return i
             }
             j += 1
