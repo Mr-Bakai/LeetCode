@@ -32,8 +32,8 @@
 /// This is the straightforward nested-loop solution (O(n * m)).
 
 func strStr(
-    _ haystack: String = "aaa",
-    _ needle: String = "aaaa"
+    _ haystack: String = "aaaa",
+    _ needle: String = "aaa"
 ) -> Int {
     
     let H = Array(haystack)
@@ -47,16 +47,15 @@ func strStr(
     
     // s a d
     // 0 1 2
-
-    // Loop over valid start positions in haystack
+    
     for i in 0...(H.count - N.count) {
         var j = 0
-        // Compare needle against substring starting at i
+        
         while j < N.count {
-            if H[i + j] != N[j] {   // mismatch → break inner loop
+            if H[i + j] != N[i] {
                 break
             }
-            if j == N.count - 1 {   // matched all chars → success
+            if j == N.count - 1 {
                 return i
             }
             j += 1
