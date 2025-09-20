@@ -32,14 +32,15 @@
 /// This is the straightforward nested-loop solution (O(n * m)).
 
 func strStr(
-    _ haystack: String,
-    _ needle: String
+    _ haystack: String = "aaa",
+    _ needle: String = "aaaa"
 ) -> Int {
     
     let H = Array(haystack)
     let N = Array(needle)
     
     if N.isEmpty { return 0 }
+    if N.count > H.count { return -1 }
     
     // s a d b u t s a d
     // 0 1 2 3 4 5 6 7 8
