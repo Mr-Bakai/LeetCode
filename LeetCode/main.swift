@@ -209,3 +209,7 @@ print(
 print(
     "strStr: \(strStr())"
 )
+
+print(
+    "plusOne: \(plusOne())"
+)
