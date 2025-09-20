@@ -28,21 +28,16 @@
 
 func plusOne(_ digits: [Int] = [9,9]) -> [Int] {
     
-    var mutableDigits = digits
-    var mind = 1
+    var digits = digits
     
-    for i in (0..<mutableDigits.count).reversed() {
-        if mutableDigits[i] != 9 {
-            mutableDigits[i] += mind
-            mind = 0
-        } else if i == 0 && mutableDigits[i] == 9 && mind != 0 {
-            mutableDigits[i] = 0
-            mutableDigits.insert(mind, at: 0)
-        } else if mutableDigits[i] == 9 && mind != 0 {
-            mutableDigits[i] = 0
-            mind = 1
+    for i in (0..<digits.count).reversed() {
+        if digits[i] != 9 {
+            digits[i] += 1
+            return digits
         }
+        digits[i] = 0
     }
     
-    return mutableDigits
+    digits.insert(1, at: 0)
+    return digits
 }
