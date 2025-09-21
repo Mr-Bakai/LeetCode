@@ -27,7 +27,6 @@
 /// Thus, the result should be [1,0].
 
 func plusOne(_ digits: [Int] = [9,9]) -> [Int] {
-    
     var digits = digits
     
     for i in (0..<digits.count).reversed() {
