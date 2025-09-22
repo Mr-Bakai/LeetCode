@@ -213,3 +213,7 @@ print(
 print(
     "plusOne: \(plusOne())"
 )
+
+var nums3 = [1,2,3,0,0,0]
+
+print("merge: \(merge(&nums3, 3, [2,5,6], 3))")
