@@ -43,13 +43,10 @@ func merge(
     _ nums2: [Int],
     _ n: Int
 ) {
-    // last valid index in nums1's data
     var i = m - 1
-    // last index in nums2
     var j = n - 1
-    // write position at the very end of nums1
     var k = m + n - 1
-
+ 
     // Fill from the back so we don't overwrite
     // nums1's unread values.
     while j >= 0 {
