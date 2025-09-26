@@ -53,17 +53,17 @@ func findKthLargest(
         
         mutNums.swapAt(pointer, right)
         
-        // Recurse into the half that contains the 'target' index
         if pointer > target {
-            // target index is smaller than p → it must be somewhere in the LEFT block
+            //target index is smaller than p → it
+            //must be somewhere in the LEFT block
             return quickSelect(left, pointer - 1)
             
-            // target index is larger than p → it must be somewhere in the RIGHT block
+            //target index is larger than p → it
+            //must be somewhere in the RIGHT block
         } else if pointer < target {
             return quickSelect(pointer + 1, right)
             
         } else {
-            // p == target → the pivot landed exactly where the k-th largest should be
             return mutNums[pointer]
         }
     }
