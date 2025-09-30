@@ -28,11 +28,11 @@
  */
 
 func findKthLargest(
-    _ nums: [Int] = [3,2,1,5,6,6,4],
+    _ nums: [Int] = [3, 2 ,1 ,5 ,6 ,6, 4],
     _ k: Int = 3
 ) -> Int {
     var mutNums = nums
-    var arraySize = nums.count
+    let arraySize = nums.count
     let target = arraySize - k
     
     func quickSelect(
