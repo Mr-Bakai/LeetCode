@@ -26,7 +26,17 @@
 /// -3 * 104 <= nums[i] <= 3 * 104
 /// Each element in the array appears twice except for one element which appears only once.
 
-func singleNumber(_ nums: [Int]) -> Int {
-    
-    return -1
+/// Returns the single number that does not have a duplicate.
+/// - Parameter nums: Array where every value appears exactly twice, except one value that appears once.
+/// - Returns: The unique (single) value.
+///
+/// Time: O(n) — we scan the array once.
+/// Space: O(1) — we only keep a running accumulator regardless of input size.
+
+func singleNumber(_ nums: [Int] = [2, 2, 1]) -> Int {
+    var acc = 0
+    for x in nums {
+        acc ^= x
+    }
+    return acc
 }
