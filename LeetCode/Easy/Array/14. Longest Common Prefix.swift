@@ -31,6 +31,11 @@ func longestCommonPrefix(
     guard !strs.isEmpty else { return "" }
     
     // Convert each word to [Character] for O(1) integer indexing
+    // words == [
+    //   ["f","l","o","w","e","r"],
+    //   ["f","l","o","w"],
+    //   ["f","l","i","g","h","t"]
+    // ]
     let words: [[Character]] = strs.map(Array.init)
     
     // f l o w e r
@@ -49,7 +54,6 @@ func longestCommonPrefix(
         let ch = base[i]
         
         for word in words.dropFirst() {
-            // If word is shorter than i+1 OR chars differ → return prefix up to i
             if i == word.count || word[i] != ch {
                 return String(base[0..<i])
             }
