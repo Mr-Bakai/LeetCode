@@ -21,8 +21,7 @@
 /// Explanation: There is no common prefix among the input strings.
 ///
 func longestCommonPrefix(
-    _ strs: [String] =
-    [
+    _ strs: [String] = [
         "flower",
         "flow",
         "flight"
@@ -44,13 +43,6 @@ func longestCommonPrefix(
     
     // Walk each position i of the base
     for i in 0..<base.count {
-        
-        // i = 0
-        // ch = f
-        
-        // i = 1
-        // ch = l
-        
         let ch = base[i]
         
         for word in words.dropFirst() {
