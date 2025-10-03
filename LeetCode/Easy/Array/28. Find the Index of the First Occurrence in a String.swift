@@ -52,7 +52,7 @@ func strStr(
         var j = 0
         
         while j < N.count {
-            if H[i + j] != N[i] {
+            if H[i + j] != N[j] {
                 break
             }
             if j == N.count - 1 {
