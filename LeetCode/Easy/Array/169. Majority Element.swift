@@ -41,3 +41,21 @@ func majorityElement(
     
     return -1
 }
+
+// Or just a little concise
+func majorityElement2(
+    _ nums: [Int] = [3,2,3]
+) -> Int {
+    
+    let halfCount = nums.count / 2
+    var count = [Int: Int]()
+    
+    for num in nums {
+        count[num, default: 0] += 1
+        if count[num, default:0] > halfCount {
+            return num
+        }
+    }
+    
+    return -1
+}
