@@ -22,12 +22,11 @@
 /// 1 <= n <= 5 * 104
 /// -109 <= nums[i] <= 109
 
-
 func majorityElement(
     _ nums: [Int] = [3,2,3]
 ) -> Int {
     
-    let leftOver = nums.count / 2
+    let halfCount = nums.count / 2
     var count = [Int: Int]()
     
     for num in nums {
@@ -35,7 +34,7 @@ func majorityElement(
     }
     
     for (key, val) in count {
-        if val > leftOver {
+        if val > halfCount {
             return key
         }
     }
